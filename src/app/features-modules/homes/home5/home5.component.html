@@ -1,0 +1,1343 @@
+<app-home-five-header></app-home-five-header>
+<!-- Home Banner -->
+<section class="section home-banner home-five row-middle">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="offset-xl-3 col-xl-6 col-lg-12">
+        <div class="banner-blk-five">
+          <div class="banner-content text-center aos" data-aos="fade-up">
+            <div
+              class="rating d-flex align-items-center justify-content-center"
+            >
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i>
+              <h5>Trused by over 2M+ users</h5>
+            </div>
+            <h1>Get the Perfect Developers & Projects</h1>
+            <p>With the world's #1 Developers Marketplace</p>
+            <form
+              class="form"
+              name="store"
+              id="store"
+              method="post"
+              action="project.html"
+            >
+              <div class="form-inner">
+                <div class="input-group">
+                  <span class="drop-detail">
+                    <mat-select [(value)]="selected">
+                      <mat-option value="projects">Projects</mat-option>
+                      <mat-option value="freelancers">Freelancers</mat-option>
+                    </mat-select>
+                  </span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="What are you looking for?"
+                  />
+                  <button
+                    class="btn btn-primary sub-btn"
+                    type="submit"
+                    (click)="search()"
+                  >
+                    <i class="feather-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div class="home-count">
+              <ul class="nav">
+                <li class="course-count">
+                  <span
+                    class="counter-up"
+                    [countUp]="9207"
+                    [options]="{ duration: 10 }"
+                    >9,207</span
+                  ><span class="list-count">Freelance developers</span>
+                </li>
+                <li class="course-count">
+                  <span
+                    class="counter-up"
+                    [countUp]="6000"
+                    [options]="{ duration: 10 }"
+                    >6000 </span
+                  ><span>+</span><span class="list-count">Projects Added</span>
+                </li>
+                <li class="course-count">
+                  <span
+                    class="counter-up"
+                    [countUp]="919207"
+                    [options]="{ duration: 10 }"
+                    >919,207</span
+                  ><span class="list-count">Completed projects</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Home Banner -->
+
+<!-- Need Job -->
+<section class="section need-job">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-12 mx-auto aos" data-aos="fade-up">
+        <div
+          class="section-header section-header-five text-center aos aos-init aos-animate"
+          data-aos="fade-up"
+        >
+          <h2 class="header-title">Need Something done?</h2>
+          <p>recrutium is here to help you to get job completed</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="need-job-group aos" data-aos="fade-up">
+          <div class="about-it-item">
+            <div class="need-job-icon text-center">
+              <img
+                src="assets/img/icon/about-it-01.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="about-great-content text-center">
+              <h4>Browse portfolios</h4>
+              <p>
+                Find professionals you can trust by browsing their samples of
+                previous work and reading their profile reviews.
+              </p>
+            </div>
+          </div>
+          <div class="about-it-item">
+            <div class="need-job-icon text-center">
+              <img
+                src="assets/img/icon/about-it-02.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="about-great-content text-center">
+              <h4>Fast bids</h4>
+              <p>
+                Receive obligation free quotes from our talented freelancers
+                fast. 80% of projects get bid
+              </p>
+            </div>
+          </div>
+          <div class="about-it-item">
+            <div class="need-job-icon text-center">
+              <img
+                src="assets/img/icon/about-it-03.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="about-great-content text-center">
+              <h4>Quality work</h4>
+              <p>
+                recrutium.com has by far the largest pool of quality freelancers
+                globally- over 50 million to choose from.
+              </p>
+            </div>
+          </div>
+          <div class="about-it-item">
+            <div class="need-job-icon text-center">
+              <img
+                src="assets/img/icon/about-it-04.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="about-great-content text-center">
+              <h4>Track progress</h4>
+              <p>
+                Keep up-to-date and on-the-go with our time tracker, and mobile
+                app. Always know what freelancers are up to.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Need Job -->
+
+<!-- Popular Projects -->
+<section class="section popular-projects-job">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-12 mx-auto">
+        <div
+          class="section-header section-header-five text-center aos"
+          data-aos="fade-up"
+        >
+          <h2 class="header-title">Popular Projects near you</h2>
+          <p>Bid and stary the new Jobs</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!--- Project Item  -->
+      <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
+        <div class="project-item project-popular-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-32.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="feature-content">
+            <div class="feature-time-blk">
+              <a href="javascript:;" class="btn btn-primary green-active"
+                >Full time</a
+              >
+              <span><i class="far fa-clock me-1"></i> 1 min ago</span>
+            </div>
+            <h4>
+              <a [routerLink]="'/freelancer/project'"
+                >3D Renders and Amazon Product</a
+              >
+            </h4>
+            <ul class="feature-project-list nav">
+              <li>
+                <img
+                  src="assets/img/icon/reg-icon.svg"
+                  class="me-1"
+                  alt="icon"
+                />UI/UX Designer
+              </li>
+              <li><i class="feather-map-pin me-1"></i>Germany</li>
+            </ul>
+            <div class="feature-foot">
+              <div class="logo-company">
+                <a [routerLink]="'/freelancer/project'">
+                  <img
+                    src="assets/img/icon/logo-icon-01.svg"
+                    class="me-1"
+                    alt="icon"
+                  />
+                  <span>AMAZE TECH</span>
+                </a>
+              </div>
+              <p>Price : <span>$40-$500</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project Item  -->
+      <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
+        <div class="project-item project-popular-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-33.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="feature-content">
+            <div class="feature-time-blk">
+              <a href="javascript:;" class="btn btn-primary green-active"
+                >Full time</a
+              >
+              <span><i class="far fa-clock me-1"></i> 1 day ago</span>
+            </div>
+            <h4>
+              <a [routerLink]="'/freelancer/project'"
+                >Website Design for a Consumer Shop</a
+              >
+            </h4>
+            <ul class="feature-project-list nav">
+              <li>
+                <img
+                  src="assets/img/icon/reg-icon.svg"
+                  class="me-1"
+                  alt="icon"
+                />Web Development
+              </li>
+              <li><i class="feather-map-pin me-1"></i>Newyork</li>
+            </ul>
+            <div class="feature-foot">
+              <div class="logo-company">
+                <a [routerLink]="'/freelancer/project'">
+                  <img
+                    src="assets/img/icon/logo-icon-05.svg"
+                    class="me-1"
+                    alt="icon"
+                  />
+                  <span>PARK INC</span>
+                </a>
+              </div>
+              <p>Price : <span>$30-$300</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project Item  -->
+      <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
+        <div class="project-item project-popular-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-34.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="feature-content">
+            <div class="feature-time-blk">
+              <a href="javascript:;" class="btn btn-primary green-active"
+                >Full time</a
+              >
+              <span><i class="far fa-clock me-1"></i> 2 day ago</span>
+            </div>
+            <h4>
+              <a [routerLink]="'/freelancer/project'"
+                >3D Renders and Amazon Product
+              </a>
+            </h4>
+            <ul class="feature-project-list nav">
+              <li>
+                <img
+                  src="assets/img/icon/reg-icon.svg"
+                  class="me-1"
+                  alt="icon"
+                />Php Development
+              </li>
+              <li><i class="feather-map-pin me-1"></i>Nevada</li>
+            </ul>
+            <div class="feature-foot">
+              <div class="logo-company">
+                <a [routerLink]="'/freelancer/project'">
+                  <img
+                    src="assets/img/icon/logo-icon-06.svg"
+                    class="me-1"
+                    alt="icon"
+                  />
+                  <span>ABC SOFTWARE</span>
+                </a>
+              </div>
+              <p>Price : <span>$20-$200</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <div class="col-xl-12">
+        <div class="more-project text-center aos" data-aos="fade-up">
+          <a [routerLink]="'/freelancer/project'" class="btn btn-primary"
+            >View More Projects</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Popular Projects -->
+
+<!-- Recent Categories -->
+<section class="section recent-categories">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-12 mx-auto">
+        <div
+          class="section-header section-header-five text-center aos"
+          data-aos="fade-up"
+        >
+          <h2 class="header-title">Recently Updated Categories for you</h2>
+          <p>Get work done in over 60 different categories</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Updated Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="aos" data-aos="fade-up">
+          <a
+            [routerLink]="'/freelancer/project'"
+            class="update-project-blk move-box"
+          >
+            <div class="update-content">
+              <h6>Website design</h6>
+              <p>400 Projects Available</p>
+            </div>
+            <div class="update-icon-end">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /Updated Item -->
+
+      <!-- Updated Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="aos" data-aos="fade-up">
+          <a
+            [routerLink]="'/freelancer/project'"
+            class="update-project-blk move-box"
+          >
+            <div class="update-content">
+              <h6>Python</h6>
+              <p>60 Projects Available</p>
+            </div>
+            <div class="update-icon-end">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /Updated Item -->
+
+      <!-- Updated Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="aos" data-aos="fade-up">
+          <a
+            [routerLink]="'/freelancer/project'"
+            class="update-project-blk move-box"
+          >
+            <div class="update-content">
+              <h6>Photoshop</h6>
+              <p>221 Projects Available</p>
+            </div>
+            <div class="update-icon-end">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /Updated Item -->
+
+      <!-- Updated Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="aos" data-aos="fade-up">
+          <a
+            [routerLink]="'/freelancer/project'"
+            class="update-project-blk move-box"
+          >
+            <div class="update-content">
+              <h6>Android Apps</h6>
+              <p>40 Projects Available</p>
+            </div>
+            <div class="update-icon-end">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /Updated Item -->
+
+      <!-- Updated Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="aos" data-aos="fade-up">
+          <a
+            [routerLink]="'/freelancer/project'"
+            class="update-project-blk move-box"
+          >
+            <div class="update-content">
+              <h6>Software Architecture</h6>
+              <p>400 Projects Available</p>
+            </div>
+            <div class="update-icon-end">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /Updated Item -->
+
+      <!-- Updated Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="aos" data-aos="fade-up">
+          <a
+            [routerLink]="'/freelancer/project'"
+            class="update-project-blk move-box"
+          >
+            <div class="update-content">
+              <h6>Ecommerce</h6>
+              <p>400 Projects Available</p>
+            </div>
+            <div class="update-icon-end">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /Updated Item -->
+
+      <!-- Updated Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="aos" data-aos="fade-up">
+          <a
+            [routerLink]="'/freelancer/project'"
+            class="update-project-blk move-box"
+          >
+            <div class="update-content">
+              <h6>Banner Design</h6>
+              <p>400 Projects Available</p>
+            </div>
+            <div class="update-icon-end">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /Updated Item -->
+
+      <!-- Updated Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="aos" data-aos="fade-up">
+          <a
+            [routerLink]="'/freelancer/project'"
+            class="update-project-blk move-box"
+          >
+            <div class="update-content">
+              <h6>Link Building</h6>
+              <p>400 Projects Available</p>
+            </div>
+            <div class="update-icon-end">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /Updated Item -->
+
+      <!-- Updated Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="aos" data-aos="fade-up">
+          <a
+            [routerLink]="'/freelancer/project'"
+            class="update-project-blk move-box"
+          >
+            <div class="update-content">
+              <h6>JavaScript</h6>
+              <p>400 Projects Available</p>
+            </div>
+            <div class="update-icon-end">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /Updated Item -->
+
+      <!-- Updated Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="aos" data-aos="fade-up">
+          <a
+            [routerLink]="'/freelancer/project'"
+            class="update-project-blk move-box"
+          >
+            <div class="update-content">
+              <h6>Marketing</h6>
+              <p>400 Projects Available</p>
+            </div>
+            <div class="update-icon-end">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /Updated Item -->
+
+      <!-- Updated Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="aos" data-aos="fade-up">
+          <a
+            [routerLink]="'/freelancer/project'"
+            class="update-project-blk move-box"
+          >
+            <div class="update-content">
+              <h6>MYSQL</h6>
+              <p>400 Projects Available</p>
+            </div>
+            <div class="update-icon-end">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /Updated Item -->
+
+      <!-- Updated Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="aos" data-aos="fade-up">
+          <a
+            [routerLink]="'/freelancer/project'"
+            class="update-project-blk move-box"
+          >
+            <div class="update-content">
+              <h6>Illustration</h6>
+              <p>400 Projects Available</p>
+            </div>
+            <div class="update-icon-end">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /Updated Item -->
+
+      <div class="col-xl-12">
+        <div class="more-project text-center aos" data-aos="fade-up">
+          <a [routerLink]="'/freelancer/project'" class="btn btn-primary"
+            >View More Projects</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Recent Categories -->
+
+<!-- Profesional Job -->
+<section class="section profesion-job">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="recent-pro-img aos" data-aos="fade-up">
+          <img
+            src="assets/img/recent-pro-01.jpg"
+            alt=""
+            class="img-fluid mb-2"
+          />
+          <img src="assets/img/recent-pro-02.jpg" alt="" class="img-fluid" />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="aos" data-aos="fade-up">
+          <div class="demand-professional">
+            <h2>More than 50 million professionals on demand</h2>
+            <p>
+              Why hire people when you can simply integrate our talented
+              developers.
+            </p>
+          </div>
+          <div class="demand-post-job">
+            <div class="demand-post-img">
+              <img
+                src="assets/img/recent-icon-01.svg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="demand-content">
+              <h6>Post a job</h6>
+              <p>
+                It’s free and easy to post a job. Simply fill in a title,
+                description and budget and competitive bids come within minutes.
+              </p>
+            </div>
+          </div>
+          <div class="demand-post-job">
+            <div class="demand-post-img">
+              <img
+                src="assets/img/recent-icon-02.svg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="demand-content">
+              <h6>Choose freelancers</h6>
+              <p>
+                No job is too big or too small. We've got freelancers for jobs
+                of any size or budget, across 1800+ skills. No job is too
+                complex. We can get it done!
+              </p>
+            </div>
+          </div>
+          <div class="demand-post-job">
+            <div class="demand-post-img">
+              <img
+                src="assets/img/recent-icon-03.svg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="demand-content">
+              <h6>Pay safely</h6>
+              <p>
+                It’s free and easy to post a job. Simply fill in a title,
+                description and budget and competitive bids come within minutes.
+              </p>
+            </div>
+          </div>
+          <div class="demand-post-job mb-0">
+            <div class="demand-post-img">
+              <img
+                src="assets/img/recent-icon-04.svg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="demand-content">
+              <h6>We’re here to help</h6>
+              <p>
+                It’s free and easy to post a job. Simply fill in a title,
+                description and budget and competitive bids come within minutes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Profesional Job -->
+
+<!-- Marketplace -->
+<section class="section market-place-join">
+  <div class="container">
+    <div class="market-place-bg">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="join-market-world aos" data-aos="fade-up">
+            <h2>Join World’s Best Marketplace for developers</h2>
+            <p>
+              Why hire people when you can simply integrate our talented cloud
+              workforce instead?
+            </p>
+            <div class="market-place-btn bidding-btn">
+              <a
+                [routerLink]="'/freelancer/project'"
+                class="btn btn-primary market-project me-2"
+                >Post a Project</a
+              >
+              <a
+                [routerLink]="'/freelancer/project'"
+                class="btn btn-primary project-post"
+                >Start Bidding</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="join-platform-img aos" data-aos="fade-up">
+            <img src="assets/img/platform-img1.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Marketplace -->
+
+<!-- Talented Developers -->
+<section class="section talent-developer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-12 mx-auto">
+        <div
+          class="section-header section-header-five text-center aos"
+          data-aos="fade-up"
+        >
+          <h2 class="header-title">Most Hired Developers</h2>
+          <p>Work with talented people at the most affordable price</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-md-6 col-sm-6">
+        <div class="freelance-widget talent-widget aos" data-aos="fade-up">
+          <div class="freelance-content">
+            <div class="freelance-img">
+              <a [routerLink]="'/freelancer/developers-details'">
+                <img src="assets/img/user/avatar-1.jpg" alt="User Image" />
+                <span class="verified"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+              </a>
+            </div>
+            <div class="freelance-info">
+              <h3>
+                <a [routerLink]="'/freelancer/developers-details'">Wentworth</a>
+              </h3>
+              <div class="freelance-specific">Angular developer</div>
+              <div class="rating">
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <span class="average-rating">5.0 (30)</span>
+              </div>
+              <div class="freelance-tags mb-0">
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >Web Design</span
+                  ></a
+                >
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >UI Design</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="talent-foot-list">
+            <ul class="nav">
+              <li>Location<span>Nevada, USA</span></li>
+              <li>Rate<span>$25 /hr</span></li>
+              <li>Job Success<span>90%</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-sm-6">
+        <div class="freelance-widget talent-widget aos" data-aos="fade-up">
+          <div class="freelance-content">
+            <div class="freelance-img">
+              <a [routerLink]="'/freelancer/developers-details'">
+                <img src="assets/img/user/avatar-2.jpg" alt="User Image" />
+                <span class="verified"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+              </a>
+            </div>
+            <div class="freelance-info">
+              <h3>
+                <a [routerLink]="'/freelancer/developers-details'"
+                  >Harry Kenneth</a
+                >
+              </h3>
+              <div class="freelance-specific">Node Js developer</div>
+              <div class="rating">
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <span class="average-rating">5.0 (30)</span>
+              </div>
+              <div class="freelance-tags mb-0">
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >Web Design</span
+                  ></a
+                >
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >UI Design</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="talent-foot-list">
+            <ul class="nav">
+              <li>Location<span>Nevada, USA</span></li>
+              <li>Rate<span>$25 /hr</span></li>
+              <li>Job Success<span>90%</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-sm-6">
+        <div class="freelance-widget talent-widget aos" data-aos="fade-up">
+          <div class="freelance-content">
+            <div class="freelance-img">
+              <a [routerLink]="'/freelancer/developers-details'">
+                <img src="assets/img/user/avatar-3.jpg" alt="User Image" />
+                <span class="verified"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+              </a>
+            </div>
+            <div class="freelance-info">
+              <h3>
+                <a [routerLink]="'/freelancer/developers-details'">Chambers</a>
+              </h3>
+              <div class="freelance-specific">Full stack developer</div>
+              <div class="rating">
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <span class="average-rating">5.0 (30)</span>
+              </div>
+              <div class="freelance-tags mb-0">
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >Web Design</span
+                  ></a
+                >
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >UI Design</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="talent-foot-list">
+            <ul class="nav">
+              <li>Location<span>Nevada, USA</span></li>
+              <li>Rate<span>$25 /hr</span></li>
+              <li>Job Success<span>90%</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-sm-6">
+        <div class="freelance-widget talent-widget aos" data-aos="fade-up">
+          <div class="freelance-content">
+            <div class="freelance-img">
+              <a [routerLink]="'/freelancer/developers-details'">
+                <img src="assets/img/user/avatar-4.jpg" alt="User Image" />
+                <span class="verified"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+              </a>
+            </div>
+            <div class="freelance-info">
+              <h3>
+                <a [routerLink]="'/freelancer/developers-details'">Victoria</a>
+              </h3>
+              <div class="freelance-specific">UI/UX designer</div>
+              <div class="rating">
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <span class="average-rating">5.0 (30)</span>
+              </div>
+              <div class="freelance-tags mb-0">
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >Web Design</span
+                  ></a
+                >
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >UI Design</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="talent-foot-list">
+            <ul class="nav">
+              <li>Location<span>Nevada, USA</span></li>
+              <li>Rate<span>$25 /hr</span></li>
+              <li>Job Success<span>90%</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-sm-6">
+        <div class="freelance-widget talent-widget aos" data-aos="fade-up">
+          <div class="freelance-content">
+            <div class="freelance-img">
+              <a [routerLink]="'/freelancer/developers-details'">
+                <img src="assets/img/user/avatar-5.jpg" alt="User Image" />
+                <span class="verified"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+              </a>
+            </div>
+            <div class="freelance-info">
+              <h3>
+                <a [routerLink]="'/freelancer/developers-details'"
+                  >Stewart Silva</a
+                >
+              </h3>
+              <div class="freelance-specific">UI/UX designer</div>
+              <div class="rating">
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <span class="average-rating">5.0 (30)</span>
+              </div>
+              <div class="freelance-tags mb-0">
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >Web Design</span
+                  ></a
+                >
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >UI Design</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="talent-foot-list">
+            <ul class="nav">
+              <li>Location<span>Nevada, USA</span></li>
+              <li>Rate<span>$25 /hr</span></li>
+              <li>Job Success<span>90%</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-sm-6">
+        <div class="freelance-widget talent-widget aos" data-aos="fade-up">
+          <div class="freelance-content">
+            <div class="freelance-img">
+              <a [routerLink]="'/freelancer/developers-details'">
+                <img src="assets/img/user/avatar-6.jpg" alt="User Image" />
+                <span class="verified"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+              </a>
+            </div>
+            <div class="freelance-info">
+              <h3>
+                <a [routerLink]="'/freelancer/developers-details'">Denise</a>
+              </h3>
+              <div class="freelance-specific">Web Developer</div>
+              <div class="rating">
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <span class="average-rating">5.0 (30)</span>
+              </div>
+              <div class="freelance-tags mb-0">
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >Web Design</span
+                  ></a
+                >
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >UI Design</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="talent-foot-list">
+            <ul class="nav">
+              <li>Location<span>Nevada, USA</span></li>
+              <li>Rate<span>$25 /hr</span></li>
+              <li>Job Success<span>90%</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-sm-6">
+        <div class="freelance-widget talent-widget aos" data-aos="fade-up">
+          <div class="freelance-content">
+            <div class="freelance-img">
+              <a [routerLink]="'/freelancer/developers-details'">
+                <img src="assets/img/user/avatar-7.jpg" alt="User Image" />
+                <span class="verified"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+              </a>
+            </div>
+            <div class="freelance-info">
+              <h3>
+                <a [routerLink]="'/freelancer/developers-details'">Lucero</a>
+              </h3>
+              <div class="freelance-specific">React Developer</div>
+              <div class="rating">
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <span class="average-rating">5.0 (30)</span>
+              </div>
+              <div class="freelance-tags mb-0">
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >Web Design</span
+                  ></a
+                >
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >UI Design</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="talent-foot-list">
+            <ul class="nav">
+              <li>Location<span>Nevada, USA</span></li>
+              <li>Rate<span>$25 /hr</span></li>
+              <li>Job Success<span>90%</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-sm-6">
+        <div class="freelance-widget talent-widget aos" data-aos="fade-up">
+          <div class="freelance-content">
+            <div class="freelance-img">
+              <a [routerLink]="'/freelancer/developers-details'">
+                <img src="assets/img/user/avatar-8.jpg" alt="User Image" />
+                <span class="verified"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+              </a>
+            </div>
+            <div class="freelance-info">
+              <h3>
+                <a [routerLink]="'/freelancer/developers-details'">Murphy</a>
+              </h3>
+              <div class="freelance-specific">IOS Developer</div>
+              <div class="rating">
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <span class="average-rating">5.0 (30)</span>
+              </div>
+              <div class="freelance-tags mb-0">
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >Web Design</span
+                  ></a
+                >
+                <a href="javascript:void(0);"
+                  ><span class="badge badge-pill badge-design"
+                    >UI Design</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="talent-foot-list">
+            <ul class="nav">
+              <li>Location<span>Nevada, USA</span></li>
+              <li>Rate<span>$25 /hr</span></li>
+              <li>Job Success<span>90%</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-12">
+        <div class="more-project text-center aos" data-aos="fade-up">
+          <a
+            [routerLink]="'/freelancer/developers-details'"
+            class="btn btn-primary"
+            >View More Freelancers</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Talented Developers -->
+
+<!-- Hire Company -->
+<section class="section compay-hire">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 d-flex align-items-center">
+        <div class="compay-hire-blk aos" data-aos="fade-up">
+          <h3>Top Hiring Company</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Nam nulla velit ullamcorper
+            tellus arcu ligula id nulla vitae. Sed laoreet turpis elementum
+            egestas vestibulum lacinia a. Faucibus varius condimentum adipiscing
+          </p>
+          <div class="market-place-btn company-register-btn">
+            <a
+              [routerLink]="'/freelancer/project'"
+              class="btn btn-primary market-project me-2"
+              >More Companies</a
+            >
+            <a
+              [routerLink]="'/freelancer/project'"
+              class="btn btn-primary project-post"
+              >Register as Company</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <div class="hire-company-list aos" data-aos="fade-up">
+          <ul class="nav">
+            <li><img src="assets/img/company-logo-01.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-02.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-03.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-04.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-05.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-06.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-07.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-08.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-09.svg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Hire Company -->
+
+<!-- Review -->
+<section class="section review-five">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-12 mx-auto">
+        <div
+          class="section-header section-header-five text-center aos"
+          data-aos="fade-up"
+        >
+          <h2 class="header-title">Top Review</h2>
+          <p>People love to come again for recrutium</p>
+        </div>
+      </div>
+    </div>
+    <div class="offset-xl-1 col-xl-10">
+      <div class="slid-review-group">
+        <ngx-slick-carousel
+          class="slider say-about slider-for aos"
+          #slickModal="slick-carousel"
+          [config]="slideConfig"
+        >
+          <div ngxSlickItem *ngFor="let item of images">
+            <div class="testimonial-all d-flex justify-content-center">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="img-reviews">
+                    <div class="review-quote">
+                      <img src="{{ item.img }}" alt="" />
+                    </div>
+                    <img src="{{ item.img1 }}" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="testimonial-two-head">
+                    <h3>{{ item.name }}</h3>
+                    <span>{{ item.domain }}</span>
+                    <p>{{ item.para }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ngx-slick-carousel>
+        <ngx-slick-carousel
+          #slickModal="slick-carousel"
+          class="slider client-img slider-nav aos"
+          [config]="slideConfig2"
+        >
+          <div ngxSlickItem *ngFor="let item of images">
+            <div class="testimonial-thumb">
+              <img src="{{ item.img1 }}" alt="" />
+            </div>
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Review -->
+
+<!-- Blog -->
+<section class="section blog-tricks-five">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-12 mx-auto">
+        <div
+          class="section-header section-header-five text-center aos"
+          data-aos="fade-up"
+        >
+          <h2 class="header-title">Our Blog</h2>
+          <p>Read Our Article To Get Tricks</p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="blog-slider"
+      class="blog-trick-five blog-slider aos"
+      data-aos="fade-up"
+    >
+      <owl-carousel-o [options]="blogOptions">
+        <ng-container *ngFor="let slide of blog; aos">
+          <ng-template carouselSlide>
+            <div class="grid-blog blog-five aos" data-aos="fade-up">
+              <div class="blog-image">
+                <a [routerLink]="'/blog/details'"
+                  ><img
+                    class="img-fluid"
+                    src="{{ slide.blogimg }}"
+                    alt="Post Image"
+                /></a>
+              </div>
+              <div class="blog-content">
+                <div class="blog-trick-read">
+                  <p>{{ slide.date }}</p>
+                  <a [routerLink]="'/blog/details'"
+                    ><i class="feather-grid me-1"></i>{{ slide.details }}</a
+                  >
+                </div>
+                <h3 class="blog-title mt-0">
+                  <a [routerLink]="'/blog/details'">{{ slide.para }}</a>
+                </h3>
+                <p class="blog-reead mb-0">{{ slide.statement }}</p>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+<!-- / Blog -->
+
+<!-- Opportunity -->
+<section class="section great-opportunity">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="job-next-blk great-find-job aos" data-aos="fade-up">
+          <h2>Find Your Next Great Job Opportunity!</h2>
+          <p>
+            Quisque pretium dolor turpis, quis blandit turpis semper ut. Nam
+            malesuada eros nec luctus laoreet.
+          </p>
+          <div class="next-job-btn next-reg-now">
+            <a
+              [routerLink]="'/auth/login'"
+              class="btn btn-primary next-sign me-3"
+              >Sign in with us</a
+            >
+            <a
+              [routerLink]="'/auth/register'"
+              class="btn btn-primary next-register"
+              >Register Now</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="opportunity-img aos" data-aos="fade-up">
+          <img class="img-fluid" src="assets/img/great-job.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Opportunity -->
+<app-home-five-footer></app-home-five-footer>

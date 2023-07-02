@@ -1,0 +1,1494 @@
+<app-home-four-header></app-home-four-header>
+<!-- Home Banner -->
+<section class="section home-banner home-four row-middle">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 col-lg-7">
+        <div class="banner-blk-four aos" data-aos="fade-up">
+          <div class="banner-content">
+            <h5>With the world's #1 Developers Marketplace</h5>
+            <h1>
+              Get the perfect<br />
+              Developers & Projects
+            </h1>
+            <form
+              class="form"
+              name="store"
+              id="store"
+              method="post"
+              action="project.html"
+            >
+              <div class="form-inner">
+                <div class="input-group">
+                  <span class="drop-detail">
+                    <mat-select [(value)]="selected">
+                      <mat-option value="projects">Projects</mat-option>
+                      <mat-option value="freelancers">Freelancers</mat-option>
+                    </mat-select>
+                  </span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="What are you looking for?"
+                  />
+                  <button
+                    class="btn btn-primary sub-btn"
+                    type="submit"
+                    (click)="search()"
+                  >
+                    Search Now
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="register-profesion aos" data-aos="fade-right">
+      <div class="profesion-content course-count">
+        <p><span class="counter-up">2</span>M+ Professionals registered</p>
+      </div>
+      <div class="avatar-group">
+        <div class="avatar avatar-xs group_img group_header">
+          <img
+            class="avatar-img rounded-circle"
+            alt="User Image"
+            src="assets/img/user/avatar-1.jpg"
+          />
+        </div>
+        <div class="avatar avatar-xs group_img group_header">
+          <img
+            class="avatar-img rounded-circle"
+            alt="User Image"
+            src="assets/img/user/avatar-2.jpg"
+          />
+        </div>
+        <div class="avatar avatar-xs group_img group_header">
+          <img
+            class="avatar-img rounded-circle"
+            alt="User Image"
+            src="assets/img/user/avatar-3.jpg"
+          />
+        </div>
+        <div class="avatar avatar-xs group_img group_header">
+          <img
+            class="avatar-img rounded-circle"
+            alt="User Image"
+            src="assets/img/user/avatar-4.jpg"
+          />
+        </div>
+        <div class="avatar avatar-xs group_img group_header">
+          <img
+            class="avatar-img rounded-circle"
+            alt="User Image"
+            src="assets/img/user/avatar-5.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Home Banner -->
+
+<!-- Our Feature -->
+<section class="section feature-count">
+  <div class="container">
+    <!-- <div class="row">
+							<div class="col-12 col-md-12 mx-auto">
+								<div class="section-header feature-count-head aos" data-aos="fade-up">	
+									<h2 class="header-title">recrutium Acheivements</h2>
+								</div>
+							</div>
+						</div> -->
+    <div class="row">
+      <!-- Feature Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="feature-item achive-feature aos" data-aos="fade-up">
+          <div class="feature-icon mb-0 me-2">
+            <img src="assets/img/icon/icon-07.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="feature-content course-count text-start">
+            <h4
+              class="counter-up"
+              [countUp]="9207"
+              [options]="{ duration: 10 }"
+            >
+              9,207
+            </h4>
+            <p>Freelance developers</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Feature Item -->
+
+      <!-- Feature Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="feature-item achive-feature aos" data-aos="fade-up">
+          <div class="feature-icon mb-0 me-2">
+            <img src="assets/img/icon/icon-04.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="feature-content course-count text-start">
+            <h4>
+              <span
+                class="counter-up"
+                [countUp]="6000"
+                [options]="{ duration: 10 }"
+                >6000
+              </span>
+              +
+            </h4>
+            <p>Projects Added</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Feature Item -->
+
+      <!-- Feature Item -->
+      <div class="col-xl-3 col-md-6">
+        <div
+          class="feature-item achive-feature comp-project aos"
+          data-aos="fade-up"
+        >
+          <div class="feature-icon mb-0 me-2">
+            <img src="assets/img/icon/icon-05.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="feature-content course-count text-start">
+            <h4
+              class="counter-up"
+              [countUp]="919207"
+              [options]="{ duration: 10 }"
+            >
+              919,207
+            </h4>
+            <p>Completed projects</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Feature Item -->
+
+      <!-- Feature Item -->
+      <div class="col-xl-3 col-md-6">
+        <div
+          class="feature-item achive-feature comp-project aos"
+          data-aos="fade-up"
+        >
+          <div class="feature-icon mb-0 me-2">
+            <img src="assets/img/icon/icon-06.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="feature-content course-count text-start">
+            <h4 class="counter-up" [countUp]="998" [options]="{ duration: 10 }">
+              998
+            </h4>
+            <p>Companies Registered</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Feature Item -->
+    </div>
+  </div>
+</section>
+<!-- /Our Feature -->
+
+<!-- Browse Categories -->
+<section class="section browse-categories">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-12 mx-auto">
+        <div
+          class="section-header section-header-four section-locate aos"
+          data-aos="fade-up"
+        >
+          <div>
+            <h2 class="header-title">Browse Projects By Category</h2>
+            <p>Get work done in over 60 different categories</p>
+          </div>
+          <div class="view-locations">
+            <a [routerLink]="'/freelancer/project'" class="btn btn-primary"
+              >View all Categories
+              <span class="location-right"
+                ><i class="feather-arrow-right"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row aos" data-aos="fade-up">
+      <div class="col-xl-2 col-md-4">
+        <a
+          [routerLink]="'/freelancer/project'"
+          class="browse-circle-blk move-box"
+        >
+          <div class="browse-icon me-2">
+            <img
+              src="assets/img/icon/browse-icon-01.svg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="browse-content">
+            <h6>Illustration</h6>
+            <p>851 Projects</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-2 col-md-4">
+        <a
+          [routerLink]="'/freelancer/project'"
+          class="browse-circle-blk move-box"
+        >
+          <div class="browse-icon me-2">
+            <img
+              src="assets/img/icon/browse-icon-02.svg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="browse-content">
+            <h6>Link Building</h6>
+            <p>456 Projects</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-2 col-md-4">
+        <a
+          [routerLink]="'/freelancer/project'"
+          class="browse-circle-blk move-box"
+        >
+          <div class="browse-icon me-2">
+            <img
+              src="assets/img/icon/browse-icon-03.svg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="browse-content">
+            <h6>Python Dev</h6>
+            <p>851 Projects</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-2 col-md-4">
+        <a
+          [routerLink]="'/freelancer/project'"
+          class="browse-circle-blk move-box"
+        >
+          <div class="browse-icon me-2">
+            <img
+              src="assets/img/icon/browse-icon-04.svg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="browse-content">
+            <h6>Angular Dev</h6>
+            <p>568 Projects</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-2 col-md-4">
+        <a
+          [routerLink]="'/freelancer/project'"
+          class="browse-circle-blk move-box"
+        >
+          <div class="browse-icon me-2">
+            <img
+              src="assets/img/icon/browse-icon-05.svg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="browse-content">
+            <h6>Node JS</h6>
+            <p>301 Projects</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-xl-2 col-md-4">
+        <a
+          [routerLink]="'/freelancer/project'"
+          class="browse-circle-blk move-box"
+        >
+          <div class="browse-icon me-2">
+            <img
+              src="assets/img/icon/browse-icon-06.svg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="browse-content">
+            <h6>Android</h6>
+            <p>751 Projects</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Browse Categories -->
+
+<!-- Feature -->
+<section class="section feature-project">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-12 mx-auto">
+        <div
+          class="section-header section-header-two text-center aos"
+          data-aos="fade-up"
+        >
+          <h2 class="header-title">Featured <span>Projects</span> for you</h2>
+          <p>We have over 2000+ Projects waiting for you</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!--- Project Item  -->
+      <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
+        <div class="project-item feature-project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-19.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="feature-content">
+            <div class="feature-time-blk">
+              <a href="javascript:;" class="btn btn-primary green-active"
+                >Full time</a
+              >
+              <span><i class="far fa-clock me-1"></i> 1 min ago</span>
+            </div>
+            <h4>
+              <a [routerLink]="'/freelancer/project'"
+                >3D Renders and Amazon Product</a
+              >
+            </h4>
+            <ul class="feature-project-list nav">
+              <li>
+                <img
+                  src="assets/img/icon/reg-icon.svg"
+                  class="me-1"
+                  alt="icon"
+                />UI/UX Designer
+              </li>
+              <li><i class="feather-map-pin me-1"></i>Germany</li>
+            </ul>
+            <div class="feature-foot">
+              <div class="logo-company">
+                <a [routerLink]="'/freelancer/project'">
+                  <img
+                    src="assets/img/icon/logo-icon-01.svg"
+                    class="me-1"
+                    alt="icon"
+                  />
+                  <span>AMAZE TECH</span>
+                </a>
+              </div>
+              <a [routerLink]="'/freelancer/project-details'" class="bid-now"
+                >Bid Now <i class="feather-arrow-right ms-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project Item  -->
+      <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
+        <div class="project-item feature-project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-20.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="feature-content">
+            <div class="feature-time-blk">
+              <a href="javascript:;" class="btn btn-primary sky-active"
+                >Full time</a
+              >
+              <span><i class="far fa-clock me-1"></i> 10 min ago</span>
+            </div>
+            <h4>
+              <a [routerLink]="'/freelancer/project'"
+                >Web Development for a Shopify Store</a
+              >
+            </h4>
+            <ul class="feature-project-list nav">
+              <li>
+                <img
+                  src="assets/img/icon/reg-icon.svg"
+                  class="me-1"
+                  alt="icon"
+                />Web Development
+              </li>
+              <li><i class="feather-map-pin me-1"></i>Kentucky, USA</li>
+            </ul>
+            <div class="feature-foot">
+              <div class="logo-company">
+                <a [routerLink]="'/freelancer/project'">
+                  <img
+                    src="assets/img/icon/logo-icon-02.svg"
+                    class="me-1"
+                    alt="icon"
+                  />
+                  <span>PARK INC</span>
+                </a>
+              </div>
+              <a [routerLink]="'/freelancer/project-details'" class="bid-now"
+                >Bid Now <i class="feather-arrow-right ms-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project Item  -->
+      <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
+        <div class="project-item feature-project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-21.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="feature-content">
+            <div class="feature-time-blk">
+              <a href="javascript:;" class="btn btn-primary green-active"
+                >Part time</a
+              >
+              <span><i class="far fa-clock me-1"></i> 5 min ago</span>
+            </div>
+            <h4>
+              <a [routerLink]="'/freelancer/project'"
+                >Website Design for a Consumer Shop</a
+              >
+            </h4>
+            <ul class="feature-project-list nav">
+              <li>
+                <img
+                  src="assets/img/icon/reg-icon.svg"
+                  class="me-1"
+                  alt="icon"
+                />Angular Developer
+              </li>
+              <li><i class="feather-map-pin me-1"></i>Delaware, USA</li>
+            </ul>
+            <div class="feature-foot">
+              <div class="logo-company">
+                <a [routerLink]="'/freelancer/project'">
+                  <img
+                    src="assets/img/icon/logo-icon-01.svg"
+                    class="me-1"
+                    alt="icon"
+                  />
+                  <span>AMAZE TECH</span>
+                </a>
+              </div>
+              <a [routerLink]="'/freelancer/project-details'" class="bid-now"
+                >Bid Now <i class="feather-arrow-right ms-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project Item  -->
+      <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
+        <div class="project-item feature-project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-22.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="feature-content">
+            <div class="feature-time-blk">
+              <a href="javascript:;" class="btn btn-primary green-active"
+                >Full time</a
+              >
+              <span><i class="far fa-clock me-1"></i> 6 min ago</span>
+            </div>
+            <h4>
+              <a [routerLink]="'/freelancer/project'"
+                >UI/UX for Cryptocurrency Exchange</a
+              >
+            </h4>
+            <ul class="feature-project-list nav">
+              <li>
+                <img
+                  src="assets/img/icon/reg-icon.svg"
+                  class="me-1"
+                  alt="icon"
+                />Flutter Development
+              </li>
+              <li><i class="feather-map-pin me-1"></i>Germany</li>
+            </ul>
+            <div class="feature-foot">
+              <div class="logo-company">
+                <a [routerLink]="'/freelancer/project'">
+                  <img
+                    src="assets/img/icon/logo-icon-03.svg"
+                    class="me-1"
+                    alt="icon"
+                  />
+                  <span>AMAZE TECH</span>
+                </a>
+              </div>
+              <a [routerLink]="'/freelancer/project-details'" class="bid-now"
+                >Bid Now <i class="feather-arrow-right ms-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project Item  -->
+      <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
+        <div class="project-item feature-project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-23.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="feature-content">
+            <div class="feature-time-blk">
+              <a href="javascript:;" class="btn btn-primary sky-active"
+                >Full time</a
+              >
+              <span><i class="far fa-clock me-1"></i> 2 min ago</span>
+            </div>
+            <h4>
+              <a [routerLink]="'/freelancer/project'"
+                >Landing Page Redesign / Sales Page</a
+              >
+            </h4>
+            <ul class="feature-project-list nav">
+              <li>
+                <img
+                  src="assets/img/icon/reg-icon.svg"
+                  class="me-1"
+                  alt="icon"
+                />Web Development
+              </li>
+              <li><i class="feather-map-pin me-1"></i>Kentucky, USA</li>
+            </ul>
+            <div class="feature-foot">
+              <div class="logo-company">
+                <a [routerLink]="'/freelancer/project'">
+                  <img
+                    src="assets/img/icon/logo-icon-02.svg"
+                    class="me-1"
+                    alt="icon"
+                  />
+                  <span>ABC SOFTWARE</span>
+                </a>
+              </div>
+              <a [routerLink]="'/freelancer/project-details'" class="bid-now"
+                >Bid Now <i class="feather-arrow-right ms-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project Item  -->
+      <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
+        <div class="project-item feature-project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-24.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="feature-content">
+            <div class="feature-time-blk">
+              <a href="javascript:;" class="btn btn-primary green-active"
+                >Part time</a
+              >
+              <span><i class="far fa-clock me-1"></i> 1 min ago</span>
+            </div>
+            <h4>
+              <a [routerLink]="'/project'">Build a Coaching Website Product</a>
+            </h4>
+            <ul class="feature-project-list nav">
+              <li>
+                <img
+                  src="assets/img/icon/reg-icon.svg"
+                  class="me-1"
+                  alt="icon"
+                />Angular Developer
+              </li>
+              <li><i class="feather-map-pin me-1"></i>Delaware, USA</li>
+            </ul>
+            <div class="feature-foot">
+              <div class="logo-company">
+                <a [routerLink]="'/project'">
+                  <img
+                    src="assets/img/icon/logo-icon-04.svg"
+                    class="me-1"
+                    alt="icon"
+                  />
+                  <span>AMAZE TECH</span>
+                </a>
+              </div>
+              <a [routerLink]="'/freelancer/project-details'" class="bid-now"
+                >Bid Now <i class="feather-arrow-right ms-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <div class="col-xl-12">
+        <div class="more-project text-center aos" data-aos="fade-up">
+          <a [routerLink]="'/freelancer/project'" class="btn btn-primary"
+            >View More Projects</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--- /Feature  -->
+
+<!-- Feature Developers -->
+<section class="section feaure-project">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 mx-auto">
+        <div class="section-header section-header-three aos" data-aos="fade-up">
+          <h2 class="header-title">Featured Developers for you</h2>
+          <p>We have over 1400+ Developers</p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="feature-project-slider"
+      class="trend-slider aos"
+      data-aos="fade-up"
+    >
+      <owl-carousel-o [options]="hiredslidesOption">
+        <ng-container *ngFor="let slide of hiredslides; aos">
+          <ng-template carouselSlide>
+            <div class="project-item project-item-feature">
+              <div class="project-img heart-blk">
+                <a [routerLink]="'/freelancer/developers-details'"
+                  ><img src="{{ slide.image }}" alt="" class="img-fluid"
+                /></a>
+                <a href="javascript:;" class="favourite"
+                  ><i class="feather-heart"></i
+                ></a>
+                <span class="circle-active"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+              </div>
+              <div class="feature-project-content text-center">
+                <h4>
+                  <a [routerLink]="'/freelancer/developers-details'">{{
+                    slide.name
+                  }}</a>
+                </h4>
+                <p>{{ slide.role }}</p>
+                <div class="rating">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="average-rating">{{ slide.rating }}</span>
+                </div>
+                <div
+                  class="feature-developer-foot d-flex justify-content-center"
+                >
+                  <a [routerLink]="'/freelancer/developers-details'"
+                    ><i class="fas fa-caret-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center aos" data-aos="fade-up">
+        <div
+          class="view-locations all-views text-center aos aos-init aos-animate"
+          data-aos="fade-up"
+        >
+          <a
+            [routerLink]="'/freelancer/developers-details'"
+            class="btn btn-primary"
+            >View all Developers
+            <span class="location-right"
+              ><i class="feather-arrow-right"></i></span
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Feature Developers -->
+
+<!-- Marketplace -->
+<section class="section join-marketplace">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="markrt-place-img aos" data-aos="fade-up">
+          <img src="assets/img/plat-form.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="market-place-group join-place-blk aos" data-aos="fade-up">
+          <h2>Join World’s Best Marketplace <span>for developers</span></h2>
+          <p>
+            Why hire people when you can simply integrate our talented cloud
+            workforce instead?
+          </p>
+          <ul class="market-list-out">
+            <li>
+              <img src="assets/img/icon/tick-01.svg" class="me-1" alt="" /> It’s
+              free and easy to post a job.
+            </li>
+            <li>
+              <img src="assets/img/icon/tick-01.svg" class="me-1" alt="" />
+              We've got freelancers for jobs of any size or budget, across 1800+
+              skills.
+            </li>
+            <li>
+              <img src="assets/img/icon/tick-01.svg" class="me-1" alt="" /> Only
+              pay for work when it has been completed and you're 100% satisfied.
+            </li>
+            <li>
+              <img src="assets/img/icon/tick-01.svg" class="me-1" alt="" /> Our
+              talented team of recruiters can help you find the best freelancer.
+            </li>
+          </ul>
+          <div class="market-place-btn">
+            <a
+              [routerLink]="'/freelancer/project'"
+              class="btn btn-primary market-project me-2"
+              >Post a Project</a
+            >
+            <a
+              [routerLink]="'/freelancer/developers-details'"
+              class="btn btn-primary market-developer"
+              >Find Developers</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Marketplace -->
+
+<!-- Popular Projects -->
+
+<!-- /Popular Projects -->
+
+<!-- Job Location -->
+<section class="section job-location">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-12 mx-auto">
+        <div
+          class="section-header section-header-four section-locate aos"
+          data-aos="fade-up"
+        >
+          <div>
+            <h2 class="header-title">Jobs by Location</h2>
+            <p>Find your favourite jobs and get the benefits of yourself</p>
+          </div>
+          <div class="view-locations">
+            <a [routerLink]="'/freelancer/project'" class="btn btn-primary"
+              >View all Locations
+              <span class="location-right"
+                ><i class="feather-arrow-right"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-md-4">
+        <div class="job-locate-blk aos" data-aos="fade-up">
+          <div class="location-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                class="img-fluid"
+                src="assets/img/location/location-01.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="job-it-content">
+            <h6><a [routerLink]="'/freelancer/project'">Nevada, USA</a></h6>
+            <ul class="nav job-locate-foot">
+              <li>80 Companies</li>
+              <li>9 Vacancy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-4">
+        <div class="job-locate-blk aos" data-aos="fade-up">
+          <div class="location-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                class="img-fluid"
+                src="assets/img/location/location-02.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="job-it-content">
+            <h6><a [routerLink]="'/freelancer/project'">London, UK</a></h6>
+            <ul class="nav job-locate-foot">
+              <li>40 Companies</li>
+              <li>8 Vacancy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-4">
+        <div class="job-locate-blk aos" data-aos="fade-up">
+          <div class="location-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                class="img-fluid"
+                src="assets/img/location/location-03.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="job-it-content">
+            <h6>
+              <a [routerLink]="'/freelancer/project'">Bangalore, India</a>
+            </h6>
+            <ul class="nav job-locate-foot">
+              <li>50 Companies</li>
+              <li>10 Vacancy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-4">
+        <div class="job-locate-blk aos" data-aos="fade-up">
+          <div class="location-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                class="img-fluid"
+                src="assets/img/location/location-04.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="job-it-content">
+            <h6><a [routerLink]="'/freelancer/project'">Newyork, USA</a></h6>
+            <ul class="nav job-locate-foot">
+              <li>60 Companies</li>
+              <li>10 Vacancy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-4">
+        <div class="job-locate-blk aos" data-aos="fade-up">
+          <div class="location-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                class="img-fluid"
+                src="assets/img/location/location-05.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="job-it-content">
+            <h6><a [routerLink]="'/freelancer/project'">Paris, France</a></h6>
+            <ul class="nav job-locate-foot">
+              <li>80 Companies</li>
+              <li>9 Vacancy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-4">
+        <div class="job-locate-blk aos" data-aos="fade-up">
+          <div class="location-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                class="img-fluid"
+                src="assets/img/location/location-06.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="job-it-content">
+            <h6><a [routerLink]="'/freelancer/project'">Berlin, Germany</a></h6>
+            <ul class="nav job-locate-foot">
+              <li>50 Companies</li>
+              <li>5 Vacancy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-4">
+        <div class="job-locate-blk aos" data-aos="fade-up">
+          <div class="location-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                class="img-fluid"
+                src="assets/img/location/location-07.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="job-it-content">
+            <h6>
+              <a [routerLink]="'/freelancer/project'">Amsterdam, Netherland</a>
+            </h6>
+            <ul class="nav job-locate-foot">
+              <li>30 Companies</li>
+              <li>2 Vacancy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-4">
+        <div class="job-locate-blk aos" data-aos="fade-up">
+          <div class="location-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                class="img-fluid"
+                src="assets/img/location/location-08.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="job-it-content">
+            <h6><a [routerLink]="'/freelancer/project'">California, USA</a></h6>
+            <ul class="nav job-locate-foot">
+              <li>70 Companies</li>
+              <li>4 Vacancy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Job Location -->
+
+<!-- Blog -->
+<!-- <section class="section blog-article">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-12 mx-auto">
+							<div class="section-header section-header-four section-locate aos" data-aos="fade-up">
+								<div>
+									<h2 class="header-title">Our Blog  </h2>
+									<p>Read Our Article To Get Tricks </p>
+								</div>
+								<div class="view-locations">
+									<a [routerLink]="'/details'" class="btn btn-primary ">View all Articles <span class="location-right"><i class="feather-arrow-right"></i></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="blog-article" class="popular-slider developers-slider aos" data-aos="fade-up">
+						<owl-carousel-o [options]="blogOptions">
+							<ng-container *ngFor="let slide of blog; aos"> 
+								<ng-template carouselSlide>
+									<div class="blog-article-group" >
+										<div class="blog-image">
+											<a [routerLink]="'/details'"><img class="img-fluid" src="{{slide.blogimg}}" alt="Post Image"></a>
+											<div class="article-Production">
+												<span><img class="img-fluid me-1" src="assets/img/icon/production-icon.svg" alt="">{{slide.department}}</span>
+											</div>
+											<div class="article-blog-content">
+												<span><img class="img-fluid me-1" src="assets/img/icon/cal-icon.svg" alt="">{{slide.date}}</span>
+												<h4><a [routerLink]="'/details'">{{slide.para}}</a></h4>
+												<p>{{slide.statement}}</p>
+											</div>
+										</div>
+									</div>
+								</ng-template>
+							</ng-container>
+						</owl-carousel-o>
+					</div>
+				</div>
+			</section> -->
+<!-- /Blog -->
+
+<!-- Top skill -->
+<section class="section top-skill">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4 col-md-12">
+        <div class="skill-head aos" data-aos="fade-up">
+          <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                data-bs-toggle="pill"
+                href="#top-skills"
+                >Top Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="pill"
+                href="#trending-developers"
+                >Trending Developers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#near-you"
+                >Projects Near you</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-8 col-md-12">
+        <div class="skill-list aos" data-aos="fade-up">
+          <!-- Tab panes -->
+          <div class="tab-content pt-0">
+            <div id="top-skills" class="container tab-pane active">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="skill-list-out">
+                    <ul>
+                      <li><a href="javascript:;">Website Design</a></li>
+                      <li><a href="javascript:;">Mobile Apps</a></li>
+                      <li><a href="javascript:;">Android Apps</a></li>
+                      <li><a href="javascript:;">iPhone Apps</a></li>
+                      <li><a href="javascript:;">Software Architecture</a></li>
+                      <li><a href="javascript:;">Graphic Design</a></li>
+                      <li><a href="javascript:;">Logo Design</a></li>
+                      <li><a href="javascript:;">Public Relations</a></li>
+                      <li><a href="javascript:;">Logistics</a></li>
+                      <li><a href="javascript:;">Proofreading</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="skill-list-out">
+                    <ul>
+                      <li><a href="javascript:;">Translation</a></li>
+                      <li><a href="javascript:;">Research</a></li>
+                      <li><a href="javascript:;">Research Writing</a></li>
+                      <li><a href="javascript:;">Article Writing</a></li>
+                      <li><a href="javascript:;">Web Scraping</a></li>
+                      <li><a href="javascript:;">HTML</a></li>
+                      <li><a href="javascript:;">CSS</a></li>
+                      <li><a href="javascript:;">HTML 5</a></li>
+                      <li><a href="javascript:;">Javascript</a></li>
+                      <li><a href="javascript:;">Data Processing</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="skill-list-out">
+                    <ul>
+                      <li><a href="javascript:;">Python</a></li>
+                      <li><a href="javascript:;">Wordpress</a></li>
+                      <li><a href="javascript:;">Web Search</a></li>
+                      <li><a href="javascript:;">Finance</a></li>
+                      <li><a href="javascript:;">Legal</a></li>
+                      <li><a href="javascript:;">Linux</a></li>
+                      <li><a href="javascript:;">Manufacturing</a></li>
+                      <li><a href="javascript:;">Amazon Web Services</a></li>
+                      <li><a href="javascript:;">Content Writing</a></li>
+                      <li><a href="javascript:;">Marketing</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="skill-list-out">
+                    <ul>
+                      <li><a href="javascript:;">Photoshop</a></li>
+                      <li><a href="javascript:;">Technical Writing</a></li>
+                      <li><a href="javascript:;">Blogging</a></li>
+                      <li><a href="javascript:;">Internet Marketing</a></li>
+                      <li><a href="javascript:;">eCommerce</a></li>
+                      <li><a href="javascript:;">Data Entry</a></li>
+                      <li><a href="javascript:;">Link Building</a></li>
+                      <li><a href="javascript:;">C++ Programming</a></li>
+                      <li><a href="javascript:;">C# Programming</a></li>
+                      <li><a href="javascript:;">See All</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="trending-developers" class="container tab-pane fade">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="skill-list-out">
+                    <ul>
+                      <li><a href="javascript:;">Translation</a></li>
+                      <li><a href="javascript:;">Research</a></li>
+                      <li><a href="javascript:;">Research Writing</a></li>
+                      <li><a href="javascript:;">Article Writing</a></li>
+                      <li><a href="javascript:;">Web Scraping</a></li>
+                      <li><a href="javascript:;">HTML</a></li>
+                      <li><a href="javascript:;">CSS</a></li>
+                      <li><a href="javascript:;">HTML 5</a></li>
+                      <li><a href="javascript:;">Javascript</a></li>
+                      <li><a href="javascript:;">Data Processing</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="skill-list-out">
+                    <ul>
+                      <li><a href="javascript:;">Website Design</a></li>
+                      <li><a href="javascript:;">Mobile Apps</a></li>
+                      <li><a href="javascript:;">Android Apps</a></li>
+                      <li><a href="javascript:;">iPhone Apps</a></li>
+                      <li><a href="javascript:;">Software Architecture</a></li>
+                      <li><a href="javascript:;">Graphic Design</a></li>
+                      <li><a href="javascript:;">Logo Design</a></li>
+                      <li><a href="javascript:;">Public Relations</a></li>
+                      <li><a href="javascript:;">Logistics</a></li>
+                      <li><a href="javascript:;">Proofreading</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="skill-list-out">
+                    <ul>
+                      <li><a href="javascript:;">Photoshop</a></li>
+                      <li><a href="javascript:;">Technical Writing</a></li>
+                      <li><a href="javascript:;">Blogging</a></li>
+                      <li><a href="javascript:;">Internet Marketing</a></li>
+                      <li><a href="javascript:;">eCommerce</a></li>
+                      <li><a href="javascript:;">Data Entry</a></li>
+                      <li><a href="javascript:;">Link Building</a></li>
+                      <li><a href="javascript:;">C++ Programming</a></li>
+                      <li><a href="javascript:;">C# Programming</a></li>
+                      <li><a href="javascript:;">See All</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="skill-list-out">
+                    <ul>
+                      <li><a href="javascript:;">Python</a></li>
+                      <li><a href="javascript:;">Wordpress</a></li>
+                      <li><a href="javascript:;">Web Search</a></li>
+                      <li><a href="javascript:;">Finance</a></li>
+                      <li><a href="javascript:;">Legal</a></li>
+                      <li><a href="javascript:;">Linux</a></li>
+                      <li><a href="javascript:;">Manufacturing</a></li>
+                      <li><a href="javascript:;">Amazon Web Services</a></li>
+                      <li><a href="javascript:;">Content Writing</a></li>
+                      <li><a href="javascript:;">Marketing</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="near-you" class="container tab-pane fade">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="skill-list-out">
+                    <ul>
+                      <li><a href="javascript:;">Photoshop</a></li>
+                      <li><a href="javascript:;">Technical Writing</a></li>
+                      <li><a href="javascript:;">Blogging</a></li>
+                      <li><a href="javascript:;">Internet Marketing</a></li>
+                      <li><a href="javascript:;">eCommerce</a></li>
+                      <li><a href="javascript:;">Data Entry</a></li>
+                      <li><a href="javascript:;">Link Building</a></li>
+                      <li><a href="javascript:;">C++ Programming</a></li>
+                      <li><a href="javascript:;">C# Programming</a></li>
+                      <li><a href="javascript:;">See All</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="skill-list-out">
+                    <ul>
+                      <li><a href="javascript:;">Website Design</a></li>
+                      <li><a href="javascript:;">Mobile Apps</a></li>
+                      <li><a href="javascript:;">Android Apps</a></li>
+                      <li><a href="javascript:;">iPhone Apps</a></li>
+                      <li><a href="javascript:;">Software Architecture</a></li>
+                      <li><a href="javascript:;">Graphic Design</a></li>
+                      <li><a href="javascript:;">Logo Design</a></li>
+                      <li><a href="javascript:;">Public Relations</a></li>
+                      <li><a href="javascript:;">Logistics</a></li>
+                      <li><a href="javascript:;">Proofreading</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="skill-list-out">
+                    <ul>
+                      <li><a href="javascript:;">Python</a></li>
+                      <li><a href="javascript:;">Wordpress</a></li>
+                      <li><a href="javascript:;">Web Search</a></li>
+                      <li><a href="javascript:;">Finance</a></li>
+                      <li><a href="javascript:;">Legal</a></li>
+                      <li><a href="javascript:;">Linux</a></li>
+                      <li><a href="javascript:;">Manufacturing</a></li>
+                      <li><a href="javascript:;">Amazon Web Services</a></li>
+                      <li><a href="javascript:;">Content Writing</a></li>
+                      <li><a href="javascript:;">Marketing</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="skill-list-out">
+                    <ul>
+                      <li><a href="javascript:;">Translation</a></li>
+                      <li><a href="javascript:;">Research</a></li>
+                      <li><a href="javascript:;">Research Writing</a></li>
+                      <li><a href="javascript:;">Article Writing</a></li>
+                      <li><a href="javascript:;">Web Scraping</a></li>
+                      <li><a href="javascript:;">HTML</a></li>
+                      <li><a href="javascript:;">CSS</a></li>
+                      <li><a href="javascript:;">HTML 5</a></li>
+                      <li><a href="javascript:;">Javascript</a></li>
+                      <li><a href="javascript:;">Data Processing</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="menu2" class="container tab-pane fade">
+              <h3>Menu 2</h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Top skill -->
+
+<!-- Hire Company -->
+<section class="section compay-hire">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 d-flex align-items-center">
+        <div class="compay-hire-blk aos" data-aos="fade-up">
+          <h3>Top Hiring Company</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Nam nulla velit ullamcorper
+            tellus arcu ligula id nulla vitae. Sed laoreet turpis elementum
+            egestas vestibulum lacinia a. Faucibus varius condimentum adipiscing
+          </p>
+          <div class="market-place-btn company-register-btn">
+            <a
+              [routerLink]="'/freelancer/project'"
+              class="btn btn-primary market-project me-2"
+              >More Companies</a
+            >
+            <a
+              [routerLink]="'/freelancer/project'"
+              class="btn btn-primary project-post"
+              >Register as Company</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <div class="hire-company-list aos" data-aos="fade-up">
+          <ul class="nav">
+            <li><img src="assets/img/company-logo-01.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-02.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-03.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-04.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-05.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-06.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-07.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-08.svg" alt="" /></li>
+            <li><img src="assets/img/company-logo-09.svg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Hire Company -->
+
+<!-- Great About -->
+<section class="section great-about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-12 mx-auto">
+        <div class="section-header section-header-two aos" data-aos="fade-up">
+          <h2 class="header-title">What's great about it?</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-md-6">
+        <div class="great-blk aos" data-aos="fade-up">
+          <div class="great-icon">
+            <img src="assets/img/icon/great-icon-01.svg" alt="" />
+          </div>
+          <div class="great-content">
+            <h4>Browse portfolios</h4>
+            <p>
+              Find professionals you can trust by browsing their samples of
+              previous work and reading their profile reviews.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="great-blk aos" data-aos="fade-up">
+          <div class="great-icon">
+            <img src="assets/img/icon/great-icon-02.svg" alt="" />
+          </div>
+          <div class="great-content">
+            <h4>Fast bids</h4>
+            <p>
+              Receive obligation free quotes from our talented freelancers fast.
+              80% of projects get bid on within 60 seconds.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="great-blk aos" data-aos="fade-up">
+          <div class="great-icon">
+            <img src="assets/img/icon/great-icon-03.svg" alt="" />
+          </div>
+          <div class="great-content">
+            <h4>Quality work</h4>
+            <p>
+              Receive obligation free quotes from our talented freelancers fast.
+              80% of projects get bid on within 60 seconds.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <div class="great-blk aos" data-aos="fade-up">
+          <div class="great-icon">
+            <img src="assets/img/icon/great-icon-04.svg" alt="" />
+          </div>
+          <div class="great-content">
+            <h4>Track progress</h4>
+            <p>
+              Keep up-to-date and on-the-go with our time tracker, and mobile
+              app. Always know what freelancers are up to.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Great About -->
+<!-- About Project -->
+<section class="section about-project">
+  <div class="about-position">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 d-flex">
+          <div class="about-it-blk aos" data-aos="fade-up">
+            <div class="about-it-img">
+              <a href="javascript:;"
+                ><img class="img-fluid" src="assets/img/about-it-01.jpg" alt=""
+              /></a>
+            </div>
+            <div class="about-it-content text-center">
+              <h4>I need a developed Project</h4>
+              <p>
+                Get the perfect Developed project for your budget from our
+                creative community.
+              </p>
+              <div class="more-project text-center mt-0">
+                <a
+                  [routerLink]="'/freelancer/project'"
+                  class="btn btn-primary project-post"
+                  >Post a Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex">
+          <div class="about-it-blk aos" data-aos="fade-up">
+            <div class="about-it-img">
+              <a href="javascript:;"
+                ><img class="img-fluid" src="assets/img/about-it-02.jpg" alt=""
+              /></a>
+            </div>
+            <div class="about-it-content text-center">
+              <h4>Find Your Next Great Job Opportunity!</h4>
+              <p>
+                Do you want to earn money, find unlimited clients and build your
+                freelance career?
+              </p>
+              <div class="more-project text-center mt-0">
+                <a
+                  [routerLink]="'/freelancer/developers-details'"
+                  class="btn btn-primary start-bid"
+                  >Start Bidding</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /About Project -->
+
+<!-- App Version -->
+<section class="section next-great-job">
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-3 col-md-6">
+        <div class="job-next-blk text-center aos" data-aos="fade-up">
+          <h2>Find Your Next Great Job Opportunity!</h2>
+          <p>
+            Quisque pretium dolor turpis, quis blandit turpis semper ut. Nam
+            malesuada eros nec luctus laoreet.
+          </p>
+          <div class="next-job-btn next-with-job">
+            <a
+              [routerLink]="'/auth/login'"
+              class="btn btn-primary next-sign me-3"
+              >Sign in with us</a
+            >
+            <a
+              [routerLink]="'/auth/register'"
+              class="btn btn-primary next-register"
+              >Register with us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /App Version -->
+<app-home-four-footer></app-home-four-footer>

@@ -1,0 +1,837 @@
+<!-- Home Banner -->
+<section class="section home-banner row-middle">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 col-lg-7">
+        <div class="banner-content aos" data-aos="fade-up">
+          <div class="rating">
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <h5>Trused by over 2M+ users</h5>
+          </div>
+          <h1>
+            Get the perfect
+            <span class="orange-text"><br />Developers & Projects</span>
+          </h1>
+          <p>With the world's #1 Developers marketplace</p>
+          <form
+            class="form"
+            name="store"
+            id="store"
+            method="post"
+            action="project.html"
+          >
+            <div class="form-inner">
+              <div class="input-group">
+                <span class="drop-detail">
+                  <mat-select [(value)]="selected">
+                    <mat-option value="projects">Freelancers</mat-option>
+                    <mat-option value="freelancers">Project</mat-option>
+                  </mat-select>
+                </span>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Search here"
+                />
+                <button
+                  class="btn btn-primary sub-btn"
+                  type="submit"
+                  (click)="search()"
+                >
+                  Search Now
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-5">
+        <div class="banner-img aos" data-aos="fade-up">
+          <img src="assets/img/banner-img.svg" class="img-fluid" alt="banner" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Home Banner -->
+
+<!-- Our Feature -->
+<section class="section feature">
+  <div class="container">
+    <div class="row">
+      <!-- Feature Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="feature-item freelance-count aos" data-aos="fade-up">
+          <div class="feature-icon">
+            <img src="assets/img/icon/icon-01.png" class="img-fluid" alt="" />
+          </div>
+          <div class="feature-content course-count">
+            <h3
+              class="counter-up"
+              [countUp]="9207"
+              [options]="{ duration: 10 }"
+            >
+              9,207
+            </h3>
+            <p>Freelance developers</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Feature Item -->
+
+      <!-- Feature Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="feature-item aos" data-aos="fade-up">
+          <div class="feature-icon">
+            <img src="assets/img/icon/icon-02.png" class="img-fluid" alt="" />
+          </div>
+          <div class="feature-content course-count">
+            <h3>
+              <span
+                class="counter-up"
+                [countUp]="6000"
+                [options]="{ duration: 10 }"
+                >6000 </span
+              ><span>+</span>
+            </h3>
+            <p>Projects Added</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Feature Item -->
+
+      <!-- Feature Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="feature-item comp-project aos" data-aos="fade-up">
+          <div class="feature-icon">
+            <img src="assets/img/icon/icon-03.png" class="img-fluid" alt="" />
+          </div>
+          <div class="feature-content course-count">
+            <h3
+              class="counter-up"
+              [countUp]="919207"
+              [options]="{ duration: 10 }"
+            >
+              919,207
+            </h3>
+            <p>Completed projects</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Feature Item -->
+
+      <!-- Feature Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="feature-item comp-project aos" data-aos="fade-up">
+          <div class="feature-icon">
+            <img src="assets/img/icon/icon-03.png" class="img-fluid" alt="" />
+          </div>
+          <div class="feature-content course-count">
+            <h3 class="counter-up" [countUp]="998" [options]="{ duration: 10 }">
+              998
+            </h3>
+            <p>Companies Registered</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Feature Item -->
+    </div>
+  </div>
+</section>
+<!-- /Our Feature -->
+
+<!--- Developed Project  -->
+<section class="section work">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Feature Item -->
+      <div class="col-md-6 work-box bg1">
+        <div class="work-content aos" data-aos="fade-up">
+          <h2>I need a Developed <span>Project</span></h2>
+          <p>
+            Get the perfect Developed project for your budget from our creative
+            community.
+          </p>
+          <a [routerLink]="'/freelancer/project'"
+            ><i class="fas fa-long-arrow-alt-right long-arrow"></i
+          ></a>
+        </div>
+      </div>
+      <!-- /Feature Item -->
+
+      <div class="col-md-6 work-box want-works bg2">
+        <div class="work-content aos" data-aos="fade-up">
+          <h2>Find Your Next Great <span>Job Opportunity!</span></h2>
+          <p>
+            Do you want to earn money, find unlimited clients and build your
+            freelance career?
+          </p>
+          <a [routerLink]="'/employer/developer'"
+            ><i class="fas fa-long-arrow-alt-right long-arrow"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--- /Developed Project  -->
+
+<!-- Projects -->
+<section class="section projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 mx-auto">
+        <div class="section-header text-center aos" data-aos="fade-up">
+          <p>High performing solutions to your requests</p>
+          <h2 class="header-title">Get Inspired By Development Projects</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!--- Project Item  -->
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-01.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="project-content">
+              <h4>45</h4>
+              <h5><a [routerLink]="'/project'">Android apps</a></h5>
+            </div>
+            <div class="pro-icon">
+              <div class="project-icon"></div>
+            </div>
+            <div class="project-content">
+              <h4>20</h4>
+              <h5><a [routerLink]="'/project'">Developers</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project Item  -->
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-02.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="project-content">
+              <h4>45</h4>
+              <h5>
+                <a [routerLink]="'/freelancer/project'">Laravel Projects</a>
+              </h5>
+            </div>
+            <div class="pro-icon">
+              <div class="project-icon"></div>
+            </div>
+            <div class="project-content">
+              <h4>20</h4>
+              <h5><a [routerLink]="'/freelancer/project'">Developers</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project-Item  -->
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-03.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="project-content">
+              <h4>45</h4>
+              <h5>
+                <a [routerLink]="'/freelancer/project'">React Projects</a>
+              </h5>
+            </div>
+            <div class="pro-icon">
+              <div class="project-icon"></div>
+            </div>
+            <div class="project-content">
+              <h4>20</h4>
+              <h5><a [routerLink]="'/freelancer/project'">Developers</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project Item  -->
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-04.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="project-content">
+              <h4>45</h4>
+              <h5>
+                <a [routerLink]="'/freelancer/project'">Angular Projects</a>
+              </h5>
+            </div>
+            <div class="pro-icon">
+              <div class="project-icon"></div>
+            </div>
+            <div class="project-content">
+              <h4>20</h4>
+              <h5><a [routerLink]="'/freelancer/project'">Developers</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project Item  -->
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-05.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="project-content">
+              <h4>45</h4>
+              <h5><a [routerLink]="'/freelancer/project'">.Net Projects</a></h5>
+            </div>
+            <div class="pro-icon">
+              <div class="project-icon"></div>
+            </div>
+            <div class="project-content">
+              <h4>20</h4>
+              <h5><a [routerLink]="'/freelancer/project'">Developers</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project Item  -->
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-06.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="project-content">
+              <h4>45</h4>
+              <h5><a [routerLink]="'/freelancer/project'">Java Pojects</a></h5>
+            </div>
+            <div class="pro-icon">
+              <div class="project-icon"></div>
+            </div>
+            <div class="project-content">
+              <h4>20</h4>
+              <h5><a [routerLink]="'/freelancer/project'">Developers</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project Item  -->
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-07.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="project-content">
+              <h4>45</h4>
+              <h5>
+                <a [routerLink]="'/freelancer/project'">Python Projects</a>
+              </h5>
+            </div>
+            <div class="pro-icon">
+              <div class="project-icon"></div>
+            </div>
+            <div class="project-content">
+              <h4>20</h4>
+              <h5><a [routerLink]="'/freelancer/project'">Developers</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+
+      <!--- Project-Item  -->
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="project-item aos" data-aos="fade-up">
+          <div class="project-img">
+            <a [routerLink]="'/freelancer/project'"
+              ><img
+                src="assets/img/project/project-08.jpg"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="project-content">
+              <h4>45</h4>
+              <h5>
+                <a [routerLink]="'/freelancer/project'">PHP Development</a>
+              </h5>
+            </div>
+            <div class="pro-icon">
+              <div class="project-icon"></div>
+            </div>
+            <div class="project-content">
+              <h4>20</h4>
+              <h5><a [routerLink]="'/freelancer/project'">Developers</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- /Project Item  -->
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="see-all aos" data-aos="fade-up">
+          <a [routerLink]="'/freelancer/project'" class="btn all-btn"
+            >View More Projects</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Projects -->
+
+<!-- Top Instructor -->
+<section class="section developer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-12 mx-auto">
+        <div class="section-header aos" data-aos="fade-up">
+          <p>Work with talented people at the most affordable price</p>
+          <h2 class="header-title">Most Hired Developers</h2>
+        </div>
+      </div>
+    </div>
+    <div id="developers-slider">
+      <owl-carousel-o
+        [options]="customOptions"
+        class="developers-slider aos"
+        data-aos="fade-up"
+      >
+        <ng-container *ngFor="let slide of clinicsslides">
+          <ng-template carouselSlide>
+            <div class="freelance-widget">
+              <div class="freelance-content">
+                <a data-toggle="modal" href="#rating" class="favourite"
+                  ><i class="fas fa-star"></i
+                ></a>
+                <div class="freelance-img">
+                  <a [routerLink]="'/freelancer/developers-details'">
+                    <img src="{{ slide.img }}" alt="User Image" />
+                    <span class="verified"
+                      ><i class="fas fa-check-circle"></i
+                    ></span>
+                  </a>
+                </div>
+                <div class="freelance-info">
+                  <h3>
+                    <a [routerLink]="'/freelancer/developers-details'">{{
+                      slide.name
+                    }}</a>
+                  </h3>
+                  <div class="freelance-specific">{{ slide.department }}</div>
+                  <div class="rating">
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="average-rating">{{ slide.rating }}</span>
+                  </div>
+                  <div class="freelance-tags">
+                    <a href="javascript:void(0);"
+                      ><span class="badge badge-pill badge-design">{{
+                        slide.tech1
+                      }}</span></a
+                    >
+                    <a href="javascript:void(0);"
+                      ><span class="badge badge-pill badge-design">{{
+                        slide.tech2
+                      }}</span></a
+                    >
+                    <a href="javascript:void(0);"
+                      ><span class="badge badge-pill badge-design">{{
+                        slide.tech3
+                      }}</span></a
+                    >
+                  </div>
+                  <div class="freelance-blk-location">
+                    <div class="freelancers-price">
+                      {{ slide.subscriptionPrice }}
+                    </div>
+                    <div class="freelance-location">
+                      <i class="fas fa-map-marker-alt me-1"></i
+                      >{{ slide.address }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-hover">
+                <a
+                  [routerLink]="'/freelancer/developers-details'"
+                  class="btn-cart"
+                  tabindex="-1"
+                  >View Profile</a
+                >
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+<!-- End Developer -->
+
+<!-- Review -->
+<section class="section testimonial-section review">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-header aos" data-aos="fade-up">
+          <p>High Performing Developers To Your</p>
+          <h2 class="header-title">Review of the Users</h2>
+        </div>
+      </div>
+    </div>
+    <div
+      id="testimonial-slider"
+      class="testimonial-slider aos"
+      data-aos="fade-up"
+    >
+      <owl-carousel-o [options]="tetimonialOptions">
+        <ng-container
+          *ngFor="let slide of testimonialslides; aos"
+          data-aos="fade-up"
+        >
+          <ng-template carouselSlide>
+            <div class="review-blog">
+              <div class="review-top d-flex align-items-center">
+                <div class="review-img">
+                  <a [routerLink]="'/employer/review'"
+                    ><img
+                      class="img-fluid"
+                      src="{{ slide.img }}"
+                      alt="Post Image"
+                  /></a>
+                </div>
+                <div class="review-info">
+                  <h3>{{ slide.name }}</h3>
+                  <h5>{{ slide.position }}</h5>
+                  <div class="rating">
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="average-rating">{{ slide.rating }}</span>
+                  </div>
+                </div>
+                <div class="test-quote-img">
+                  <img
+                    class="img-fluid"
+                    src="assets/img/test-quote.svg"
+                    alt="quote"
+                  />
+                </div>
+              </div>
+
+              <div class="review-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat orci enim, mattis nibh aliquam dui, nibh faucibus
+                  aenean.
+                </p>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+<!-- / Review -->
+
+<!-- App Version -->
+<section class="section app-version">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="app-version-img text-center aos" data-aos="fade-up">
+          <img class="img-fluid" src="assets/img/app-version.png" alt="App" />
+        </div>
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="app-version-blk aos" data-aos="fade-up">
+          <h2>Get More In Our Application and Enjoy The Mobile App Version</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Nunc tristique neque tempor
+            nisl feugiat lectus in. Placerat pharetra eleifend integer integer
+            at. Nunc nunc eu arcu amet faucibus. Lorem ipsum dolor sit amet
+            consectetur. Nunc
+          </p>
+          <h5>Download our Mobile app in Both Platform</h5>
+          <div class="app-img-inside">
+            <img class="img-fluid" src="assets/img/app-01.png" alt="App" />
+            <img class="img-fluid" src="assets/img/app-02.png" alt="App" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /App Version -->
+
+<!-- Company Hire -->
+<section class="section top-company">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-header text-center aos" data-aos="fade-up">
+          <h6>Top Hiring Company</h6>
+        </div>
+      </div>
+    </div>
+    <div id="company-slider" class="testimonial-slider aos" data-aos="fade-up">
+      <owl-carousel-o [options]="companyOptions">
+        <ng-container *ngFor="let slide of companyslides; aos">
+          <ng-template carouselSlide>
+            <div class="company-logos">
+              <img src="{{ slide.img }}" alt="" />
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+<!-- / Company Hire -->
+
+<!-- News -->
+<section class="section news">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-header text-center aos" data-aos="fade-up">
+          <p>High Performing Developers To Your</p>
+          <h2 class="header-title">Feature Blog</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row blog-grid-row">
+      <div class="col-xl-4 col-md-6 d-flex">
+        <!-- Blog Post -->
+        <div class="blog grid-blog aos" data-aos="fade-up">
+          <div class="blog-image">
+            <a [routerLink]="'/blog/details'"
+              ><img
+                class="img-fluid"
+                src="assets/img/blog/blog-01.jpg"
+                alt="Post Image"
+            /></a>
+          </div>
+          <div class="blog-content">
+            <ul class="entry-meta meta-item">
+              <li>
+                <div class="post-author">
+                  <a [routerLink]="'/freelancer/developers-details'"
+                    ><img src="assets/img/img-02.jpg" alt="Post Author" />
+                    <span> David Lee</span></a
+                  >
+                </div>
+              </li>
+              <li><i class="fas fa-calendar-alt"></i> 4 Oct 2021</li>
+            </ul>
+            <h3 class="blog-title">
+              <a [routerLink]="'/blog/details'"
+                >Your next job starts right here</a
+              >
+            </h3>
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet consectetur. Nunc tristique neque
+              tempor nisl feugiat lectus in. Placerat pharetra eleifend integer
+              integer at. Nunc nunc eu arcu amet faucibus.
+            </p>
+            <div class="blog-read">
+              <a [routerLink]="'/blog/details'"
+                >Read More <i class="fas fa-arrow-right ms-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- /Blog Post -->
+      </div>
+      <div class="col-xl-4 col-md-6 d-flex">
+        <!-- Blog Post -->
+        <div class="blog grid-blog aos" data-aos="fade-up">
+          <div class="blog-image">
+            <a [routerLink]="'/blog/details'"
+              ><img
+                class="img-fluid"
+                src="assets/img/blog/blog-02.jpg"
+                alt="Post Image"
+            /></a>
+          </div>
+          <div class="blog-content">
+            <ul class="entry-meta meta-item">
+              <li>
+                <div class="post-author">
+                  <a [routerLink]="'/freelancer/developer-details'"
+                    ><img src="assets/img/img-03.jpg" alt="Post Author" />
+                    <span> Deborah Angel</span></a
+                  >
+                </div>
+              </li>
+              <li><i class="fas fa-calendar-alt"></i> 10 Oct 2021</li>
+            </ul>
+            <h3 class="blog-title">
+              <a [routerLink]="'/blog/details'">People who completed NAND?</a>
+            </h3>
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet consectetur. Nunc tristique neque
+              tempor nisl feugiat lectus in. Placerat pharetra eleifend integer
+              integer at. Nunc nunc eu arcu amet faucibus.
+            </p>
+            <div class="blog-read">
+              <a [routerLink]="'/blog/details'"
+                >Read More <i class="fas fa-arrow-right ms-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- /Blog Post -->
+      </div>
+      <div class="col-xl-4 col-md-6 d-flex">
+        <!-- Blog Post -->
+        <div class="blog grid-blog aos" data-aos="fade-up">
+          <div class="blog-image">
+            <a [routerLink]="'/blog/details'"
+              ><img
+                class="img-fluid"
+                src="assets/img/blog/blog-03.jpg"
+                alt="Post Image"
+            /></a>
+          </div>
+          <div class="blog-content">
+            <ul class="entry-meta meta-item">
+              <li>
+                <div class="post-author">
+                  <a [routerLink]="'/freelancer/developer-details'"
+                    ><img src="assets/img/img-04.jpg" alt="Post Author" />
+                    <span>Darren Elder</span></a
+                  >
+                </div>
+              </li>
+              <li><i class="fas fa-calendar-alt"></i> 3 Nov 2021</li>
+            </ul>
+            <h3 class="blog-title">
+              <a [routerLink]="'/blog/details'"
+                >recrutium - How to get job through online?</a
+              >
+            </h3>
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet consectetur. Nunc tristique neque
+              tempor nisl feugiat lectus in. Placerat pharetra eleifend integer
+              integer at. Nunc nunc eu arcu amet faucibus.
+            </p>
+            <div class="blog-read">
+              <a [routerLink]="'/blog/details'"
+                >Read More <i class="fas fa-arrow-right ms-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- /Blog Post -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="see-all aos" data-aos="fade-up">
+          <a [routerLink]="'/blog/details'" class="btn all-btn"
+            >More Articles</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / News -->
+
+<!-- News -->
+<section class="section job-register">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="register-job-blk">
+          <div class="job-content-blk aos" data-aos="fade-up">
+            <h1>Find Your Next Great Job Opportunity!</h1>
+            <p>
+              Quisque pretium dolor turpis, quis blandit turpis semper ut. Nam
+              malesuada eros nec luctus laoreet.
+            </p>
+          </div>
+          <div class="see-all mt-0 aos" data-aos="fade-up">
+            <a [routerLink]="'/auth/register'" class="btn all-btn"
+              >Register Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--News-->
+<button class="scroll-top scroll-to-target" (click)="scrollToTop()">
+  <span class="ti-angle-up"
+    ><img src="assets/img/icon/top-icon.svg" class="img-fluid" alt=""
+  /></span>
+</button>

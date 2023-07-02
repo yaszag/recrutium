@@ -1,0 +1,978 @@
+<app-home-three-header></app-home-three-header>
+
+<!-- Home Banner  -->
+<div class="home-banner home-three">
+  <ngx-slick-carousel
+    class="dot-slider slider"
+    #slickModal="slick-carousel"
+    [config]="slideConfig"
+  >
+    <div ngxSlickItem *ngFor="let item of images">
+      <!-- Banner Images -->
+      <div class="profile-widget-slide">
+        <div class="slide-pro-img">
+          <a href="javascript:void(0);">
+            <img class="img-fluid" src="{{ item.img }}" alt="" />
+          </a>
+        </div>
+      </div>
+      <!-- /Banner Images -->
+    </div>
+  </ngx-slick-carousel>
+  <div class="container">
+    <div class="banner-kofe">
+      <div class="banner-content aos" data-aos="fade-up">
+        <div class="rating d-flex">
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <h5>TRUSED BY OVER 2M+ USERS</h5>
+        </div>
+        <h1>
+          Get the Perfect Developers & <br />
+          Projects
+        </h1>
+        <form
+          class="form"
+          name="store"
+          id="store"
+          method="post"
+          action="project.html"
+        >
+          <div class="form-inner">
+            <div class="input-group">
+              <span class="drop-detail">
+                <mat-select [(value)]="selected">
+                  <mat-option value="projects">Projects</mat-option>
+                  <mat-option value="freelancers">Freelancers</mat-option>
+                </mat-select>
+              </span>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="What are you looking for"
+              />
+              <button
+                class="btn btn-primary sub-btn"
+                type="submit"
+                (click)="search()"
+              >
+                Search Now
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Home Banner -->
+
+<!-- Company Hire -->
+<section class="section company-hire">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div
+          class="section-header hire-heading text-center aos"
+          data-aos="fade-up"
+        >
+          <h6>Trusted Companies</h6>
+        </div>
+      </div>
+    </div>
+    <div id="company-slider" class="testimonial-slider aos" data-aos="fade-up">
+      <owl-carousel-o [options]="companyOptions">
+        <ng-container *ngFor="let slide of companyslides; aos">
+          <ng-template carouselSlide>
+            <div class="company-logos">
+              <img src="{{ slide.img }}" alt="" />
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+<!-- / Company Hire -->
+
+<!-- Different Categories -->
+<section class="section different-categories">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-12 mx-auto">
+        <div
+          class="section-header section-header-three section-locate aos"
+          data-aos="fade-up"
+        >
+          <div>
+            <h2 class="header-title">Browse Projects By Category</h2>
+            <p>Get work done in over 60 different categories</p>
+          </div>
+          <div class="view-locations">
+            <a [routerLink]="'/freelancer/project'" class="btn btn-primary"
+              >View all Categories
+              <span class="location-right"
+                ><i class="feather-arrow-right"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="different-categories-blk aos" data-aos="fade-up">
+          <div class="differ-img">
+            <img src="assets/img/icon/category-01.svg" alt="" />
+          </div>
+          <div class="differ-content">
+            <h6>Angular Development</h6>
+            <p>Web development, UI/UX development, Module development & more</p>
+            <div class="category-foot">
+              <span>840 Projects</span>
+              <a [routerLink]="'/freelancer/project'"
+                ><i class="fas fa-caret-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="different-categories-blk aos" data-aos="fade-up">
+          <div class="differ-img">
+            <img src="assets/img/icon/category-02.svg" alt="" />
+          </div>
+          <div class="differ-content">
+            <h6>Python Development</h6>
+            <p>Web development, UI/UX development, Module development & more</p>
+            <div class="category-foot">
+              <span>640 Projects</span>
+              <a [routerLink]="'/freelancer/project'"
+                ><i class="fas fa-caret-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="different-categories-blk aos" data-aos="fade-up">
+          <div class="differ-img">
+            <img src="assets/img/icon/category-03.svg" alt="" />
+          </div>
+          <div class="differ-content">
+            <h6>Node JS Development</h6>
+            <p>Web development, UI/UX development, Module development & more</p>
+            <div class="category-foot">
+              <span>240 Projects</span>
+              <a [routerLink]="'/freelancer/project'"
+                ><i class="fas fa-caret-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="different-categories-blk aos" data-aos="fade-up">
+          <div class="differ-img">
+            <img src="assets/img/icon/category-04.svg" alt="" />
+          </div>
+          <div class="differ-content">
+            <h6>PHP Development</h6>
+            <p>Web development, UI/UX development, Module development & more</p>
+            <div class="category-foot">
+              <span>840 Projects</span>
+              <a [routerLink]="'/freelancer/project'"
+                ><i class="fas fa-caret-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="different-categories-blk aos" data-aos="fade-up">
+          <div class="differ-img">
+            <img src="assets/img/icon/category-05.svg" alt="" />
+          </div>
+          <div class="differ-content">
+            <h6>Illustration</h6>
+            <p>Web development, UI/UX development, Module development & more</p>
+            <div class="category-foot">
+              <span>340 Projects</span>
+              <a [routerLink]="'/freelancer/project'"
+                ><i class="fas fa-caret-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="different-categories-blk aos" data-aos="fade-up">
+          <div class="differ-img">
+            <img src="assets/img/icon/category-06.svg" alt="" />
+          </div>
+          <div class="differ-content">
+            <h6>Link Building</h6>
+            <p>Web development, UI/UX development, Module development & more</p>
+            <div class="category-foot">
+              <span>540 Projects</span>
+              <a [routerLink]="'/freelancer/project'"
+                ><i class="fas fa-caret-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="different-categories-blk aos" data-aos="fade-up">
+          <div class="differ-img">
+            <img src="assets/img/icon/category-07.svg" alt="" />
+          </div>
+          <div class="differ-content">
+            <h6>Android Apps</h6>
+            <p>Web development, UI/UX development, Module development & more</p>
+            <div class="category-foot">
+              <span>640 Projects</span>
+              <a [routerLink]="'/freelancer/project'"
+                ><i class="fas fa-caret-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 d-flex">
+        <div class="different-categories-blk aos" data-aos="fade-up">
+          <div class="differ-img">
+            <img src="assets/img/icon/category-08.svg" alt="" />
+          </div>
+          <div class="differ-content">
+            <h6>MYSQL</h6>
+            <p>Web development, UI/UX development, Module development & more</p>
+            <div class="category-foot">
+              <span>140 Projects</span>
+              <a [routerLink]="'/freelancer/project'"
+                ><i class="fas fa-caret-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Different Categories -->
+
+<!-- Marketplace -->
+<section class="section best-marketplace">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="market-place-group aos" data-aos="fade-up">
+          <h2>Join World’s Best <span>Marketplace for developers</span></h2>
+          <p>
+            Why hire people when you can simply integrate our talented cloud
+            workforce instead?
+          </p>
+          <ul class="market-list-out">
+            <li>
+              <img src="assets/img/icon/tick.svg" class="me-1" alt="" /> It’s
+              free and easy to post a job.
+            </li>
+            <li>
+              <img src="assets/img/icon/tick.svg" class="me-1" alt="" /> We've
+              got freelancers for jobs of any size or budget, across 1800+
+              skills.
+            </li>
+            <li>
+              <img src="assets/img/icon/tick.svg" class="me-1" alt="" /> Only
+              pay for work when it has been completed and you're 100% satisfied.
+            </li>
+            <li>
+              <img src="assets/img/icon/tick.svg" class="me-1" alt="" /> Our
+              talented team of recruiters can help you find the best freelancer.
+            </li>
+          </ul>
+          <div class="market-place-btn">
+            <a
+              [routerLink]="'/freelancer/project'"
+              class="btn btn-primary market-project me-2"
+              >Post a Project</a
+            >
+            <a
+              [routerLink]="'/freelancer/developers-details'"
+              class="btn btn-primary market-developer"
+              >Find Developers</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="markrt-place-img aos" data-aos="fade-up">
+          <img src="assets/img/market-place.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Marketplace -->
+
+<!-- Trending Projects -->
+<section class="section trend-projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 mx-auto">
+        <div class="section-header section-header-three aos" data-aos="fade-up">
+          <h2 class="header-title">Trending Projects</h2>
+          <p>Recently Update jobs for you</p>
+        </div>
+      </div>
+    </div>
+    <div id="trend-slider" class="aos" data-aos="fade-up">
+      <owl-carousel-o [options]="trendingprojectsOptions" class="trend-slider">
+        <ng-container *ngFor="let slide of trendingprojects; aos">
+          <ng-template carouselSlide>
+            <div class="project-item trend-project-item">
+              <div class="project-img">
+                <a [routerLink]="'/freelancer/project'"
+                  ><img src="{{ slide.img }}" alt="" class="img-fluid"
+                /></a>
+              </div>
+              <div class="trend-project-content">
+                <h5>{{ slide.post }}</h5>
+                <h4>
+                  <a [routerLink]="'/freelancer/project'">{{
+                    slide.projects
+                  }}</a>
+                </h4>
+                <ul class="trend-project-list">
+                  <li>
+                    <img
+                      src="assets/img/icon/reg-icon.svg"
+                      class="me-1"
+                      alt="icon"
+                    />{{ slide.domain }}
+                  </li>
+                  <li>
+                    <i class="feather-map-pin me-1"></i>{{ slide.address }}
+                  </li>
+                </ul>
+                <div class="trend-rate">
+                  <ul class="nav">
+                    <li>
+                      {{ slide.date }} <span>{{ slide.price }}</span>
+                    </li>
+                    <li>
+                      <i class="feather-map-pin me-1"></i>{{ slide.status }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div
+          class="view-locations all-views text-center aos aos-init aos-animate"
+          data-aos="fade-up"
+        >
+          <a href="javascript:;" class="btn btn-primary"
+            >View all Projects
+            <span class="location-right"
+              ><i class="feather-arrow-right"></i></span
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Trending Projects -->
+
+<!-- Our Feature -->
+<section class="section feature-count">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 mx-auto">
+        <div class="section-header feature-count-head aos" data-aos="fade-up">
+          <h2 class="header-title">recrutium Acheivements</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Feature Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="feature-item freelance-count aos" data-aos="fade-up">
+          <div class="feature-icon">
+            <img src="assets/img/icon/icon-07.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="feature-content course-count">
+            <h3
+              class="counter-up"
+              [countUp]="9207"
+              [options]="{ duration: 10 }"
+            >
+              9,207
+            </h3>
+            <p>Freelance developers</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Feature Item -->
+
+      <!-- Feature Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="feature-item aos" data-aos="fade-up">
+          <div class="feature-icon">
+            <img src="assets/img/icon/icon-04.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="feature-content course-count">
+            <h3>
+              <span
+                class="counter-up"
+                [countUp]="6000"
+                [options]="{ duration: 10 }"
+                >6000 </span
+              ><span>+</span>
+            </h3>
+            <p>Projects Added</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Feature Item -->
+
+      <!-- Feature Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="feature-item comp-project aos" data-aos="fade-up">
+          <div class="feature-icon">
+            <img src="assets/img/icon/icon-05.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="feature-content course-count">
+            <h3
+              class="counter-up"
+              [countUp]="919207"
+              [options]="{ duration: 10 }"
+            >
+              919,207
+            </h3>
+            <p>Completed projects</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Feature Item -->
+
+      <!-- Feature Item -->
+      <div class="col-xl-3 col-md-6">
+        <div class="feature-item comp-project aos" data-aos="fade-up">
+          <div class="feature-icon">
+            <img src="assets/img/icon/icon-06.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="feature-content course-count">
+            <h3 class="counter-up">998</h3>
+            <p>Companies Registered</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Feature Item -->
+    </div>
+  </div>
+</section>
+<!-- /Our Feature -->
+
+<!-- Feature Projects -->
+<section class="section feaure-project">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 mx-auto">
+        <div class="section-header section-header-three aos" data-aos="fade-up">
+          <h2 class="header-title">Featured Developers for you</h2>
+          <p>We have over 1400+ Developers</p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="feature-project-slider"
+      class="trend-slider aos"
+      data-aos="fade-up"
+    >
+      <owl-carousel-o [options]="hiredslidesOption">
+        <ng-container *ngFor="let slide of hiredslides; aos">
+          <ng-template carouselSlide>
+            <div class="project-item project-item-feature">
+              <div class="project-img heart-blk">
+                <a [routerLink]="'/freelancer/developers-details'"
+                  ><img src="{{ slide.image }}" alt="" class="img-fluid"
+                /></a>
+                <a href="javascript:;" class="favourite"
+                  ><i class="feather-heart"></i
+                ></a>
+                <span class="circle-active"
+                  ><i class="fas fa-check-circle"></i
+                ></span>
+                <span class="hour-dollr"
+                  ><img
+                    src="assets/img/icon/price-icon.svg"
+                    class="me-2"
+                    alt=""
+                  />{{ slide.time }}</span
+                >
+              </div>
+              <div class="feature-project-content text-center">
+                <h4>
+                  <a [routerLink]="'/freelancer/developers-details'">{{
+                    slide.name
+                  }}</a>
+                </h4>
+                <p>{{ slide.role }}</p>
+                <div class="rating">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="average-rating">{{ slide.rating }}</span>
+                </div>
+                <div
+                  class="feature-developer-foot d-flex justify-content-center"
+                >
+                  <a [routerLink]="'/freelancer/developers-details'"
+                    ><i class="fas fa-caret-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center aos" data-aos="fade-up">
+        <div
+          class="view-locations all-views text-center aos aos-init aos-animate"
+          data-aos="fade-up"
+        >
+          <a
+            [routerLink]="'/freelancer/developers-details'"
+            class="btn btn-primary"
+            >View all Developers
+            <span class="location-right"
+              ><i class="feather-arrow-right"></i></span
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Feature Projects -->
+
+<!-- Review -->
+<section class="section review-people">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div
+          class="section-header section-header-three text-center aos"
+          data-aos="fade-up"
+        >
+          <h2 class="header-title">Top Reviews</h2>
+          <p>People love to come again for recrutium</p>
+        </div>
+      </div>
+    </div>
+    <div id="review-three-slider" class="trend-slider aos" data-aos="fade-up">
+      <owl-carousel-o [options]="reviewOptions">
+        <ng-container *ngFor="let slide of reviewslide; aos">
+          <ng-template carouselSlide>
+            <div class="review-love-group">
+              <div class="quote-love-img">
+                <img class="img-fluid" src="assets/img/quote.svg" alt="" />
+              </div>
+              <p class="review-passage">{{ slide.statement }}</p>
+              <div class="review-love-list">
+                <div class="review-profile-blk">
+                  <div class="reviw-profile-img">
+                    <a [routerLink]="'/employer/review'"
+                      ><img
+                        src="{{ slide.img }}"
+                        class="me-2"
+                        alt="Post Author"
+                    /></a>
+                  </div>
+                  <div class="review-name-blk">
+                    <h6>
+                      <a [routerLink]="'/employer/review'">{{ slide.name }}</a>
+                    </h6>
+                    <p>{{ slide.domain }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+<!-- / Review -->
+
+<!-- Blog -->
+<section class="section news">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 mx-auto">
+        <div class="section-header section-header-three aos" data-aos="fade-up">
+          <h2 class="header-title">Our Blog</h2>
+          <p>Read Our Article To Get Tricks</p>
+        </div>
+      </div>
+    </div>
+    <div id="blog-slider" class="trend-slider aos" data-aos="fade-up">
+      <owl-carousel-o [options]="blogslideOptions">
+        <ng-container *ngFor="let slide of blogslide; aos">
+          <ng-template carouselSlide>
+            <!-- Blog Post -->
+            <div class="blog blog-trick aos" data-aos="fade-up">
+              <div class="blog-image">
+                <a [routerLink]="'/blog/details'"
+                  ><img
+                    class="img-fluid"
+                    src="{{ slide.img1 }}"
+                    alt="Post Image"
+                /></a>
+              </div>
+              <div class="blog-content blog-trick-content">
+                <h3 class="blog-title">
+                  <a [routerLink]="'/blog/details'">{{ slide.para }}</a>
+                </h3>
+                <p>{{ slide.statement }}</p>
+                <ul class="entry-meta meta-item mb-0">
+                  <li>
+                    <div class="post-author blog-hover-img">
+                      <a [routerLink]="'/blog/details'"
+                        ><img src="{{ slide.img2 }}" alt="Post Author" />
+                        <span> {{ slide.name }}</span></a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Blog Post -->
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div
+          class="view-locations all-views text-center aos aos-init aos-animate"
+          data-aos="fade-up"
+        >
+          <a [routerLink]="'/blog/details'" class="btn btn-primary"
+            >View all Blogs
+            <span class="location-right"
+              ><i class="feather-arrow-right"></i></span
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / Blog -->
+
+<!-- Top skill -->
+<section class="section top-skill">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="skill-head skill-head-two aos" data-aos="fade-up">
+          <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                data-bs-toggle="pill"
+                href="#top-skills"
+                >Top Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="pill"
+                href="#trending-developers"
+                >Trending Developers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#near-you"
+                >Projects Near you</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="skill-list aos" data-aos="fade-up">
+          <!-- Tab panes -->
+          <div class="tab-content pt-0">
+            <div id="top-skills" class="container tab-pane active">
+              <div class="offset-md-1 col-md-10">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="skill-list-out">
+                      <ul>
+                        <li><a href="javascript:;">Translation</a></li>
+                        <li><a href="javascript:;">Research</a></li>
+                        <li><a href="javascript:;">Research Writing</a></li>
+                        <li><a href="javascript:;">Article Writing</a></li>
+                        <li><a href="javascript:;">Web Scraping</a></li>
+                        <li><a href="javascript:;">HTML</a></li>
+                        <li><a href="javascript:;">CSS</a></li>
+                        <li><a href="javascript:;">HTML 5</a></li>
+                        <li><a href="javascript:;">Javascript</a></li>
+                        <li><a href="javascript:;">Data Processing</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="skill-list-out">
+                      <ul>
+                        <li><a href="javascript:;">Website Design</a></li>
+                        <li><a href="javascript:;">Mobile Apps</a></li>
+                        <li><a href="javascript:;">Android Apps</a></li>
+                        <li><a href="javascript:;">iPhone Apps</a></li>
+                        <li>
+                          <a href="javascript:;">Software Architecture</a>
+                        </li>
+                        <li><a href="javascript:;">Graphic Design</a></li>
+                        <li><a href="javascript:;">Logo Design</a></li>
+                        <li><a href="javascript:;">Public Relations</a></li>
+                        <li><a href="javascript:;">Logistics</a></li>
+                        <li><a href="javascript:;">Proofreading</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="skill-list-out">
+                      <ul>
+                        <li><a href="javascript:;">Photoshop</a></li>
+                        <li><a href="javascript:;">Technical Writing</a></li>
+                        <li><a href="javascript:;">Blogging</a></li>
+                        <li><a href="javascript:;">Internet Marketing</a></li>
+                        <li><a href="javascript:;">eCommerce</a></li>
+                        <li><a href="javascript:;">Data Entry</a></li>
+                        <li><a href="javascript:;">Link Building</a></li>
+                        <li><a href="javascript:;">C++ Programming</a></li>
+                        <li><a href="javascript:;">C# Programming</a></li>
+                        <li><a href="javascript:;">See All</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="skill-list-out">
+                      <ul>
+                        <li><a href="javascript:;">Python</a></li>
+                        <li><a href="javascript:;">Wordpress</a></li>
+                        <li><a href="javascript:;">Web Search</a></li>
+                        <li><a href="javascript:;">Finance</a></li>
+                        <li><a href="javascript:;">Legal</a></li>
+                        <li><a href="javascript:;">Linux</a></li>
+                        <li><a href="javascript:;">Manufacturing</a></li>
+                        <li><a href="javascript:;">Amazon Web Services</a></li>
+                        <li><a href="javascript:;">Content Writing</a></li>
+                        <li><a href="javascript:;">Marketing</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="trending-developers" class="container tab-pane fade">
+              <div class="offset-md-1 col-md-10">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="skill-list-out">
+                      <ul>
+                        <li><a href="javascript:;">Python</a></li>
+                        <li><a href="javascript:;">Wordpress</a></li>
+                        <li><a href="javascript:;">Web Search</a></li>
+                        <li><a href="javascript:;">Finance</a></li>
+                        <li><a href="javascript:;">Legal</a></li>
+                        <li><a href="javascript:;">Linux</a></li>
+                        <li><a href="javascript:;">Manufacturing</a></li>
+                        <li><a href="javascript:;">Amazon Web Services</a></li>
+                        <li><a href="javascript:;">Content Writing</a></li>
+                        <li><a href="javascript:;">Marketing</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="skill-list-out">
+                      <ul>
+                        <li><a href="javascript:;">Translation</a></li>
+                        <li><a href="javascript:;">Research</a></li>
+                        <li><a href="javascript:;">Research Writing</a></li>
+                        <li><a href="javascript:;">Article Writing</a></li>
+                        <li><a href="javascript:;">Web Scraping</a></li>
+                        <li><a href="javascript:;">HTML</a></li>
+                        <li><a href="javascript:;">CSS</a></li>
+                        <li><a href="javascript:;">HTML 5</a></li>
+                        <li><a href="javascript:;">Javascript</a></li>
+                        <li><a href="javascript:;">Data Processing</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="skill-list-out">
+                      <ul>
+                        <li><a href="javascript:;">Photoshop</a></li>
+                        <li><a href="javascript:;">Technical Writing</a></li>
+                        <li><a href="javascript:;">Blogging</a></li>
+                        <li><a href="javascript:;">Internet Marketing</a></li>
+                        <li><a href="javascript:;">eCommerce</a></li>
+                        <li><a href="javascript:;">Data Entry</a></li>
+                        <li><a href="javascript:;">Link Building</a></li>
+                        <li><a href="javascript:;">C++ Programming</a></li>
+                        <li><a href="javascript:;">C# Programming</a></li>
+                        <li><a href="javascript:;">See All</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="skill-list-out">
+                      <ul>
+                        <li><a href="javascript:;">Website Design</a></li>
+                        <li><a href="javascript:;">Mobile Apps</a></li>
+                        <li><a href="javascript:;">Android Apps</a></li>
+                        <li><a href="javascript:;">iPhone Apps</a></li>
+                        <li>
+                          <a href="javascript:;">Software Architecture</a>
+                        </li>
+                        <li><a href="javascript:;">Graphic Design</a></li>
+                        <li><a href="javascript:;">Logo Design</a></li>
+                        <li><a href="javascript:;">Public Relations</a></li>
+                        <li><a href="javascript:;">Logistics</a></li>
+                        <li><a href="javascript:;">Proofreading</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="near-you" class="container tab-pane fade">
+              <div class="offset-md-1 col-md-10">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="skill-list-out">
+                      <ul>
+                        <li><a href="javascript:;">Photoshop</a></li>
+                        <li><a href="javascript:;">Technical Writing</a></li>
+                        <li><a href="javascript:;">Blogging</a></li>
+                        <li><a href="javascript:;">Internet Marketing</a></li>
+                        <li><a href="javascript:;">eCommerce</a></li>
+                        <li><a href="javascript:;">Data Entry</a></li>
+                        <li><a href="javascript:;">Link Building</a></li>
+                        <li><a href="javascript:;">C++ Programming</a></li>
+                        <li><a href="javascript:;">C# Programming</a></li>
+                        <li><a href="javascript:;">See All</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="skill-list-out">
+                      <ul>
+                        <li><a href="javascript:;">Translation</a></li>
+                        <li><a href="javascript:;">Research</a></li>
+                        <li><a href="javascript:;">Research Writing</a></li>
+                        <li><a href="javascript:;">Article Writing</a></li>
+                        <li><a href="javascript:;">Web Scraping</a></li>
+                        <li><a href="javascript:;">HTML</a></li>
+                        <li><a href="javascript:;">CSS</a></li>
+                        <li><a href="javascript:;">HTML 5</a></li>
+                        <li><a href="javascript:;">Javascript</a></li>
+                        <li><a href="javascript:;">Data Processing</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="skill-list-out">
+                      <ul>
+                        <li><a href="javascript:;">Website Design</a></li>
+                        <li><a href="javascript:;">Mobile Apps</a></li>
+                        <li><a href="javascript:;">Android Apps</a></li>
+                        <li><a href="javascript:;">iPhone Apps</a></li>
+                        <li>
+                          <a href="javascript:;">Software Architecture</a>
+                        </li>
+                        <li><a href="javascript:;">Graphic Design</a></li>
+                        <li><a href="javascript:;">Logo Design</a></li>
+                        <li><a href="javascript:;">Public Relations</a></li>
+                        <li><a href="javascript:;">Logistics</a></li>
+                        <li><a href="javascript:;">Proofreading</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="skill-list-out">
+                      <ul>
+                        <li><a href="javascript:;">Python</a></li>
+                        <li><a href="javascript:;">Wordpress</a></li>
+                        <li><a href="javascript:;">Web Search</a></li>
+                        <li><a href="javascript:;">Finance</a></li>
+                        <li><a href="javascript:;">Legal</a></li>
+                        <li><a href="javascript:;">Linux</a></li>
+                        <li><a href="javascript:;">Manufacturing</a></li>
+                        <li><a href="javascript:;">Amazon Web Services</a></li>
+                        <li><a href="javascript:;">Content Writing</a></li>
+                        <li><a href="javascript:;">Marketing</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="menu2" class="container tab-pane fade">
+              <h3>Menu 2</h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Top skill -->
+
+<!-- App Version -->
+<section class="section next-job">
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-3 col-md-6">
+        <div class="job-next-blk text-center aos" data-aos="fade-up">
+          <h2>Find Your Next Great Job Opportunity!</h2>
+          <p>
+            Quisque pretium dolor turpis, quis blandit turpis semper ut. Nam
+            malesuada eros nec luctus laoreet.
+          </p>
+          <div class="next-job-btn">
+            <a
+              [routerLink]="'/auth/login'"
+              class="btn btn-primary next-sign me-3"
+              >Sign in with us</a
+            >
+            <a
+              [routerLink]="'/auth/register'"
+              class="btn btn-primary next-register"
+              >Register with us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /App Version -->
+<app-home-three-footer></app-home-three-footer>
